@@ -1,0 +1,114 @@
+.privacy__main--container {
+  padding: 2.5rem 7rem 1.5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.privacy__para {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.privacy__section--header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy__section--title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.privacy__content--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.privacy__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: #242424;
+}
+.privacy__wrapper--ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy__wrapper--ul li {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: black;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 1720px) {
+  .privacy__main--container {
+    padding: 1.6rem 20rem 1rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .privacy__main--container {
+    padding: 2.5rem 6rem 1.5rem 6rem;
+  }
+  .privacy__section--title {
+    font-size: 2.5rem;
+  }
+
+  .privacy__subtitle {
+    font-size: 1.625rem;
+  }
+  .privacy__para {
+    font-size: 1rem;
+  }
+
+  .privacy__wrapper--ul li {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .privacy__main--container {
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+  .privacy__section--title {
+    font-size: 2rem;
+  }
+
+  .privacy__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .privacy__wrapper--ul li {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .privacy__para {
+    font-size: 1rem;
+  }
+}

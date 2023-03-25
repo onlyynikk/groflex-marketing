@@ -1,0 +1,95 @@
+.term__main--section {
+  padding: 2.5rem 5rem 1.5rem 5rem;
+}
+
+.termsandcondition__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.terms__content--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.termsandcondition__subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: #242424;
+}
+
+.terms__wrapper--ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.terms__wrapper--ul li::before {
+  content: "\2022";
+  color: #00a353;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.terms__wrapper--ul li {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: black;
+}
+
+@media screen and (min-width: 1720px) {
+  .term__main--section {
+    padding: 1.6rem 20rem 1rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .term__main--section {
+    padding: 2.5rem 5rem 1.5rem 5rem;
+  }
+  .termsandcondition__title {
+    font-size: 2.5rem;
+  }
+
+  .termsandcondition__subtitle {
+    font-size: 1.625rem;
+  }
+
+  .terms__wrapper--ul li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .term__main--section {
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+  .termsandcondition__title {
+    font-size: 0.625rem;
+  }
+
+  .termsandcondition__subtitle {
+    font-size: 0.5rem;
+  }
+
+  .terms__wrapper--ul li {
+    font-size: 0.325rem;
+  }
+}

@@ -1,0 +1,98 @@
+.children__section--container {
+  padding: 8rem 0 0rem 0;
+}
+
+.children-gif {
+  width: 100%;
+  height: auto;
+  padding: 0rem 2rem 2rem 2rem;
+}
+.children-gif-tablet {
+  display: none;
+}
+.children-gif-phone {
+  display: none;
+}
+
+.children__banner {
+  background-color: #00a353;
+  padding: 3rem 8rem 3rem 8rem;
+}
+
+.children__banner--title {
+  font-weight: 800;
+  font-style: mulish;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.children__banner--text {
+  font-weight: 400;
+  font-style: mulish;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .children__section--container {
+    padding: 4rem 0 0 0;
+  }
+
+  .children__banner {
+    padding: 3rem 6rem 3rem 6rem;
+  }
+  .children-gif-tablet {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .children-gif {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .children__section--container {
+    padding: 2rem 0 0 0;
+  }
+
+  .children__banner {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .children-gif-tablet {
+    display: none;
+  }
+  .children-gif {
+    display: none;
+  }
+  .children-gif-phone {
+    display: block;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  .children__banner--title {
+    font-weight: 800;
+    font-style: mulish;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: white;
+  }
+  .children__banner--text {
+    font-weight: 400;
+    font-style: mulish;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .children__banner {
+    padding: 1.6rem 20rem 1.6rem 20rem;
+  }
+}

@@ -1,0 +1,28 @@
+.btn__primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #00a353;
+  background-color: #00a353;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  width: 11rem;
+  cursor: pointer;
+}
+.btnP__margin {
+  margin-right: 0.8rem;
+}
+
+.btn__primary:hover {
+  box-shadow: 0.5px 4px 8px rgb(154, 154, 154);
+  transition: 300ms;
+}
+
+.btn__icon {
+  margin-right: 0.3rem;
+  width: 15px;
+  border: #00a353;
+  height: auto;
+}

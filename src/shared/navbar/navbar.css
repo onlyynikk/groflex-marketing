@@ -1,0 +1,131 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 5rem 1.5rem 5rem;
+  /* box-shadow: 1px 4px 8px rgb(154, 154, 154); */
+  box-shadow: 0px 4px 4px rgba(0, 113, 202, 0.25);
+}
+
+.navbar__logo--container img {
+  height: 60px;
+  width: 190px;
+}
+
+.navbar__btn--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* navbarlinks */
+
+.navbar__link--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__links--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+.navbar__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: default;
+  margin: 0 0.625rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__icon {
+  margin-left: 0.3rem;
+}
+.navbar__link:hover {
+  color: #00a353;
+}
+.dropdown {
+  cursor: pointer;
+}
+
+.navbar__hamburger--menu {
+  display: none;
+}
+
+.navbar__hamburger--menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+}
+
+.hamburger__menu {
+  position: relative;
+}
+.hamburger__menu ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 12px;
+  right: 0px;
+  top: 30px;
+}
+
+.hamburger__menu--link {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  font-style: "mulish";
+  font-size: 18px;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.hamburger__menu--link:hover {
+  color: #00a353;
+}
+
+/* --media-queries-- */
+
+@media screen and (min-width: 1720px) {
+  .navbar {
+    padding: 1.6rem 20rem 1rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .navbar__link--container {
+    display: none;
+  }
+  .navbar__btn--container {
+    display: none;
+  }
+  .navbar__hamburger--menu {
+    display: block;
+  }
+  .navbar {
+    padding: 2.5rem 5rem 1.5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .navbar__link--container {
+    display: none;
+  }
+  .navbar__btn--container {
+    display: none;
+  }
+  .navbar__hamburger--menu {
+    display: block;
+  }
+  .navbar {
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+}

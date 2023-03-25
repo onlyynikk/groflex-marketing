@@ -1,0 +1,134 @@
+.invoice__header--container {
+  padding: 2.5rem 5rem 1.5rem 5rem;
+  background-image: linear-gradient(rgb(212, 239, 216), white);
+}
+
+.invoice__header__section1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 12rem 0;
+}
+.invoice__header__section1 p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin: 0 2rem 2rem 0;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 155%;
+  color: #272d30;
+}
+
+.invoice__header--title h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.485rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  margin: 4rem 20rem 3rem 0;
+}
+.invoice__header--section-gif img {
+  width: 100%;
+  height: auto;
+}
+.invoice__header--section-gif {
+  box-shadow: 3px 5px 80px 13px rgba(0, 113, 202, 0.3);
+  filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 2.39947px;
+}
+
+.invoice__header--section2--title h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.625rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  margin: 3.75rem 0;
+}
+
+.invoice__header--section2--items {
+  display: grid;
+  column-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.invoice__header--section2--items p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #242424;
+}
+
+.invoice__header--checkmark--icon {
+  margin: 0 1rem 0 0;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 850px) {
+  .invoice__header--container {
+    padding: 2.5rem 5rem 1.5rem 5rem;
+  }
+  .invoice__header--title h1 {
+    font-size: 2.5rem;
+    margin: 4rem 0rem 3rem 0;
+  }
+
+  .termsandcondition__subtitle {
+    font-size: 1.625rem;
+  }
+
+  .terms__wrapper--ul li {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 360px) {
+  .invoice__header--container {
+    padding: 2.5rem 2rem 1.5rem 2rem;
+  }
+
+  .invoice__header__section1 {
+    flex-direction: column;
+  }
+  .invoice__header--title h1 {
+    font-size: 2.25rem;
+    margin: 4rem 0 2rem 0;
+  }
+  .invoice__header__section1 p {
+    font-size: 1.125rem;
+    margin: 0 0rem 2rem 0;
+  }
+  .invoice__header--gif {
+    margin: 3rem 4rem;
+  }
+
+  .invoice__header--section2--title h1 {
+    font-size: 1.875rem;
+  }
+  .invoice__header--section2--items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .invoice__header--section2--items p {
+    font-size: 1.125rem;
+  }
+
+  .terms__wrapper--ul li {
+    font-size: 0.325rem;
+  }
+  .invoice__header--section-gif {
+    margin: 3rem 0 1rem 0;
+  }
+}

@@ -1,0 +1,26 @@
+.btn__light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #0071ca;
+  color: #0071ca;
+  /* padding: 0.5rem 1rem; */
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+
+  width: 6rem;
+}
+
+.btn__margin {
+  margin-right: 0.8rem;
+}
+
+.btn__light:hover {
+  box-shadow: 0.5px 4px 8px rgb(154, 154, 154);
+  transition: 300ms;
+}
+/* 
+.btn__icon {
+  margin-left: 0.3rem;
+} */

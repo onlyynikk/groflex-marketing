@@ -1,0 +1,91 @@
+.data__section--container {
+  padding: 5rem 6.25rem 2rem 6.25rem;
+}
+
+.data__section1 {
+  padding: 0 0 1rem 0;
+}
+
+.data__section--title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.data--section--icon {
+  margin: 0 0 1rem 0;
+}
+
+.cloud-icon {
+  padding-bottom: 5px;
+}
+.data__section-subtitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+.data__section-para {
+  margin-top: 2rem;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.data-card {
+  padding: 2rem 0;
+}
+
+/* --media-queries-- */
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .data__section--container {
+    padding: 11rem 5rem 2rem 5rem;
+  }
+  .data-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .data__section--container {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  .data-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .data-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .data__section--container {
+    padding: 5rem 20rem 2rem 20rem;
+  }
+}

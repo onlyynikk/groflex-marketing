@@ -1,0 +1,49 @@
+.banner__container {
+  background-image: linear-gradient(to right, #9cc7ea, #9bd9c4);
+  padding: 5rem 8rem 5rem 8rem;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0 10rem 0 0;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 1.5px;
+}
+
+.banner__text {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .banner__container {
+    padding: 5rem 6rem 5rem 6rem;
+  }
+  .banner__title {
+    padding: 0 5rem 0 0;
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .banner__container {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+  .banner__title {
+    padding: 0 0 0 0;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .banner__container {
+    padding: 5rem 20rem 5rem 20rem;
+  }
+}
