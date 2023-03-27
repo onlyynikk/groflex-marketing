@@ -37,18 +37,14 @@
 .tab__button:hover {
   cursor: pointer;
   color: #00a353;
-  border-bottom: 3px solid #00a353;
-  transition: 400ms;
+  border-bottom: 2px solid #00a353;
+  transition: 200ms;
   font-family: "Mulish";
   font-style: normal;
   font-weight: 900;
-  font-size: 1.125rem;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 2px;
 }
 
-.tab__button:focus {
+.tab__button--active {
   cursor: pointer;
   color: #00a353;
   font-weight: 700;

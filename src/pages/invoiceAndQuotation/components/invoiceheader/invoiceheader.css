@@ -1,5 +1,5 @@
 .invoice__header--container {
-  padding: 2.5rem 5rem 1.5rem 5rem;
+  padding: 8rem 5rem 1.5rem 5rem;
   background-image: linear-gradient(rgb(212, 239, 216), white);
 }
 
@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 850px) {
   .invoice__header--container {
-    padding: 2.5rem 5rem 1.5rem 5rem;
+    padding: 8rem 5rem 1.5rem 5rem;
   }
   .invoice__header--title h1 {
     font-size: 2.5rem;
@@ -97,7 +97,7 @@
 
 @media only screen and (max-width: 850px) and (min-width: 360px) {
   .invoice__header--container {
-    padding: 2.5rem 2rem 1.5rem 2rem;
+    padding: 8rem 2rem 1.5rem 2rem;
   }
 
   .invoice__header__section1 {

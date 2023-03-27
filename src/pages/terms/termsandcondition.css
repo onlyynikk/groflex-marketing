@@ -1,5 +1,5 @@
 .term__main--section {
-  padding: 2.5rem 5rem 1.5rem 5rem;
+  padding: 8rem 5rem 1.5rem 5rem;
 }
 
 .termsandcondition__title {
@@ -56,13 +56,13 @@
 
 @media screen and (min-width: 1720px) {
   .term__main--section {
-    padding: 1.6rem 20rem 1rem 20rem;
+    padding: 10rem 20rem 1rem 20rem;
   }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .term__main--section {
-    padding: 2.5rem 5rem 1.5rem 5rem;
+    padding: 10rem 5rem 1.5rem 5rem;
   }
   .termsandcondition__title {
     font-size: 2.5rem;
@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 768px) and (min-width: 360px) {
   .term__main--section {
-    padding: 2.5rem 2rem 1.5rem 2rem;
+    padding: 10rem 2rem 1.5rem 2rem;
   }
   .termsandcondition__title {
     font-size: 0.625rem;

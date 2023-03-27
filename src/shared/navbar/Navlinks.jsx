@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import OnClickOutside from "../onClickOutside/OnClickOutside";
 
 export default function Navlinks() {
   const [featuresArrow, setfeaturesArrow] = useState(false);
-  const [solutionArrow, setsolutionArrow] = useState(false);
   const [resourcesArrow, setresourcesArrow] = useState(false);
 
   return (
@@ -12,57 +12,63 @@ export default function Navlinks() {
       <Link className="navbar__link space-right" to="/">
         Home
       </Link>
-      {/* <Link className="navbar__link" to="/">
-        Pricing
-      </Link> */}
-
-      <Link
-        className="navbar__link dropdown"
-        to="/invoice-and-quotation"
-        onClick={() => setfeaturesArrow(!featuresArrow)}
-        // onMouseEnter={() => {
-        //   setfeaturesArrow(true);
-        // }}
-        // onMouseLeave={() => setfeaturesArrow(false)}
-      >
-        Features
-        {!featuresArrow ? (
-          <IoIosArrowDown className="navbar__icon" />
-        ) : (
-          <IoIosArrowUp className="navbar__icon" />
-        )}
-      </Link>
-
-      {/* <Link
-        className="navbar__link dropdown"
-        to="/"
-        onMouseEnter={() => {
-          setsolutionArrow(true);
-        }}
-        onMouseLeave={() => setsolutionArrow(false)}
-      >
-        Solutions
-        {!solutionArrow ? (
-          <IoIosArrowDown className="navbar__icon" />
-        ) : (
-          <IoIosArrowUp className="navbar__icon" />
-        )}
-      </Link> */}
-      <Link
-        className="navbar__link dropdown"
-        to="/"
-        onMouseEnter={() => {
-          setresourcesArrow(true);
-        }}
-        onMouseLeave={() => setresourcesArrow(false)}
-      >
-        Resources
-        {!resourcesArrow ? (
-          <IoIosArrowDown className="navbar__icon" />
-        ) : (
-          <IoIosArrowUp className="navbar__icon" />
-        )}
-      </Link>
+      <div className="dropdown__container">
+        <OnClickOutside onClickOutside={() => setfeaturesArrow(false)}>
+          <Link
+            className={featuresArrow ? "navbar__link--hover" : "navbar__link"}
+            onClick={() => setfeaturesArrow(!featuresArrow)}
+          >
+            Features
+            {!featuresArrow ? (
+              <IoIosArrowDown className="navbar__icon" />
+            ) : (
+              <IoIosArrowUp className="navbar__icon" />
+            )}
+          </Link>
+          {featuresArrow && (
+            <div
+              className="dropdown__menu"
+              onMouseLeave={() => setfeaturesArrow(false)}
+            >
+              <Link
+                className="dropdown__menu--link"
+                to="/features/invoice-and-quotation"
+                onClick={() => setfeaturesArrow(false)}
+              >
+                Invoice And Quotations
+              </Link>
+            </div>
+          )}
+        </OnClickOutside>
+      </div>
+      <div className="dropdown__container">
+        <OnClickOutside onClickOutside={() => setresourcesArrow(false)}>
+          <Link
+            className={resourcesArrow ? "navbar__link--hover" : "navbar__link"}
+            onClick={() => setresourcesArrow(!resourcesArrow)}
+          >
+            Resources
+            {!resourcesArrow ? (
+              <IoIosArrowDown className="navbar__icon" />
+            ) : (
+              <IoIosArrowUp className="navbar__icon" />
+            )}
+          </Link>
+          {resourcesArrow && (
+            <div
+              className="dropdown__menu"
+              onMouseLeave={() => setresourcesArrow(false)}
+            >
+              <Link
+                className="dropdown__menu--link"
+                to="https://groflex.io/blog/"
+              >
+                Blogs
+              </Link>
+            </div>
+          )}
+        </OnClickOutside>
+      </div>
     </div>
   );
 }

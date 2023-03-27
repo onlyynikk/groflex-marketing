@@ -1,0 +1,111 @@
+/* <------hamburger menu------ >  */
+
+.navbar__hamburger--menu {
+  display: none;
+}
+
+.hamburger__menu--container {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .navbar__hamburger--menu {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger__menu--container {
+    background-color: white;
+    position: fixed;
+    display: block;
+    margin-top: 8rem;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .hamburger__menu--links {
+    padding: 0rem 5rem 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger__menu--links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  .hamburger__menu--buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 1.125rem;
+  }
+  .hamburger__menu--link {
+    cursor: pointer;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 155%;
+  }
+  .hamburger__menu--link:hover {
+    color: #00a353;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .navbar__hamburger--menu {
+    display: block;
+    position: relative;
+  }
+
+  .hamburger__menu--container {
+    background-color: white;
+    position: fixed;
+    display: block;
+    margin-top: 8rem;
+    width: 100%;
+    z-index: 9999;
+    transition: all 250ms ease-in-out;
+  }
+
+  .hamburger__menu--links {
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger__menu--links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  .hamburger__menu--buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 1.125rem;
+  }
+  .hamburger__menu--btn {
+    margin: 0.5rem 0 0 0;
+  }
+  .hamburger__menu--link {
+    cursor: pointer;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 155%;
+  }
+  .hamburger__menu--link:hover {
+    color: #00a353;
+  }
+}

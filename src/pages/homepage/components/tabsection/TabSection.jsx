@@ -5,25 +5,25 @@ import Payments from "./Payments";
 import "./tabsection.css";
 
 export default function TabSection() {
-  const [showEstimate, setShowEstimate] = useState(true);
+  const [showQuotations, setshowQuotations] = useState(true);
   const [showInvoice, setShowInvoices] = useState(false);
   const [showPayments, setShowPayments] = useState(false);
 
   function handleEstimate() {
-    setShowEstimate(true);
+    setshowQuotations(true);
     setShowPayments(false);
     setShowInvoices(false);
   }
 
   function handleInvoices() {
     setShowInvoices(true);
-    setShowEstimate(false);
+    setshowQuotations(false);
     setShowPayments(false);
   }
   function handlePayments() {
     setShowPayments(true);
     setShowInvoices(false);
-    setShowEstimate(false);
+    setshowQuotations(false);
   }
 
   return (
@@ -32,18 +32,33 @@ export default function TabSection() {
         Create your brand easily and quickly with simplicity
       </h1>
       <div className="tab__buttons">
-        <button className="tab__button" onClick={handleEstimate}>
+        <button
+          className={
+            showQuotations ? "tab__button tab__button--active" : "tab__button"
+          }
+          onClick={handleEstimate}
+        >
           Quotations
         </button>
-        <button className="tab__button" onClick={handleInvoices}>
+        <button
+          className={
+            showInvoice ? "tab__button tab__button--active" : "tab__button"
+          }
+          onClick={handleInvoices}
+        >
           Invoices
         </button>
-        <button className="tab__button" onClick={handlePayments}>
+        <button
+          className={
+            showPayments ? "tab__button tab__button--active" : "tab__button"
+          }
+          onClick={handlePayments}
+        >
           Payments
         </button>
       </div>
       <hr />
-      {showEstimate && <Quatations />}
+      {showQuotations && <Quatations />}
       {showInvoice && <Invoices />}
       {showPayments && <Payments />}
     </div>

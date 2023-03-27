@@ -12,7 +12,6 @@ export default function Faq({ id, active, setActive, question, answer }) {
     }
   }
   const closeAllAccordion = () => {
-    console.log("Hi htis is cosoefosihefi");
     setActive(0);
   };
   return (

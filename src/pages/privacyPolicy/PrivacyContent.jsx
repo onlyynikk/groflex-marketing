@@ -3,7 +3,7 @@ import "./privacypolicy.css";
 
 export default function () {
   return (
-    <div>
+    <div className="privacypage__container">
       <div className="privacy__section--header">
         <h1 className="privacy__section--title">Privacy Policy</h1>
       </div>

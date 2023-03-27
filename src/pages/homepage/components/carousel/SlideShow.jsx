@@ -8,10 +8,10 @@ import slide4 from "../../../../assets/slide4.jpeg";
 import slide5 from "../../../../assets/slide5.jpeg";
 
 const images = [slide1, slide2, slide3, slide4, slide5];
-const delay = 2500;
 
 export default function SlideShow() {
   const [index, setIndex] = useState(0);
+  const [delay, setDelay] = useState(2500);
   const timeoutRef = React.useRef(null);
 
   function resetTimeout() {
@@ -19,6 +19,7 @@ export default function SlideShow() {
       clearTimeout(timeoutRef.current);
     }
   }
+
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -41,6 +42,8 @@ export default function SlideShow() {
       {/* for desktops */}
 
       <div
+        onMouseOver={() => setDelay(10000)}
+        onMouseLeave={() => setDelay(2500)}
         className="slides-desktop"
         style={{ transform: `translate3d(${-index * 60}%, 0, 0)` }}
       >

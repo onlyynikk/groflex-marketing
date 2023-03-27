@@ -75,7 +75,7 @@ export default function ContactUs() {
                     UTM_Term: user.utm_term,
 
                     UTM_Content: user.utm_content,
-                    Message: user.Message, // Message
+                    Message: user.message, // Message
                   },
                 },
               ],
@@ -128,7 +128,7 @@ export default function ContactUs() {
                   onChange={(e) => setUserName(e.target.value)}
                   required
                 />
-                <span className="error-msge">error</span>
+                {/* <span className="error-msge">error</span> */}
               </div>
               <div>
                 <input
@@ -140,7 +140,7 @@ export default function ContactUs() {
                   onChange={(e) => setContact(e.target.value)}
                   required
                 />
-                <span className="error-msge">error</span>
+                {/* <span className="error-msge">error</span> */}
               </div>
             </div>
             <div className="input__items--section2">
@@ -165,7 +165,7 @@ export default function ContactUs() {
                 value={companyName}
                 onChange={(e) => setCompanyName(e.target.value)}
               />
-              <span className="error-msge">error</span>
+              {/* <span className="error-msge">error</span> */}
             </div>
             <div>
               <textarea
@@ -181,6 +181,7 @@ export default function ContactUs() {
                 Submit
               </button>
             </div>
+            {/* {user.name && <h1>Success</h1>} */}
           </form>
         </div>
       </div>
