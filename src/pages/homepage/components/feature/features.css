@@ -27,6 +27,8 @@
 
 .features__heading img {
   margin: 0 1.5rem 0 0;
+  width: 53px;
+  height: 53px;
 }
 
 .features__text {
@@ -102,29 +104,35 @@
   .features__title {
     font-family: "Mulish";
     font-style: normal;
-    font-weight: 900;
-    font-size: 1.875rem;
+    font-weight: 600;
+    font-size: 2rem;
     line-height: 140%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0 0 2rem 0;
     padding: 0;
 
     /* primary font */
   }
   .features__text {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
   .features__heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
   }
   .cards {
     max-width: 1200px;
     display: grid;
-    gap: 4rem;
+    gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
   }
   .card {
     padding: 1rem 0rem;
+  }
+  .features__heading img {
+    margin: 0 1rem 0 0;
+    width: 43px;
+    height: 43px;
   }
 }
 

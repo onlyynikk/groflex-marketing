@@ -16,7 +16,10 @@ export default function Invoices() {
             and you are done.
           </p>
           <div className="section__wrapper--seemore-div">
-            <Link to="/" className="section__wrapper--seemore">
+            <Link
+              to="/features/invoice-and-quotation"
+              className="section__wrapper--seemore"
+            >
               See more
             </Link>
           </div>

@@ -10,6 +10,11 @@
 }
 
 .name-logo {
+  display: inline-block;
+  height: 100%;
+}
+
+.name-logo img {
   width: 25%;
   margin: 3rem 0 0 5rem;
   height: auto;
@@ -121,8 +126,13 @@
     display: none;
   }
   .name-logo {
+    display: inline-block;
+    height: 100%;
+  }
+
+  .name-logo img {
     width: 25%;
-    margin: 3rem 0 0 4rem;
+    margin: 3rem 0 0 5rem;
     height: auto;
     padding: 0;
   }
@@ -174,8 +184,13 @@
     display: none;
   }
   .name-logo {
-    width: 50%;
-    margin: 1rem 0 0 2rem;
+    display: inline-block;
+    height: 100%;
+  }
+
+  .name-logo img {
+    width: 30%;
+    margin: 3rem 0 0 1rem;
     height: auto;
     padding: 0;
   }

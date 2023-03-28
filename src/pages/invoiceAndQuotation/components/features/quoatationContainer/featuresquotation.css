@@ -226,14 +226,14 @@
     display: none;
   }
   .features__section--item-box1 {
-    padding: 1rem;
+    padding: 1rem 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
   .features__section--item-box2 {
-    padding: 1rem;
+    padding: 1rem 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,5 +248,33 @@
   .features__page--mobile-img img {
     width: 100%;
     height: auto;
+  }
+  .invoice__feature--title h1 {
+    font-size: 1.5rem;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+  .invoice__feature--question {
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: 0px;
+    margin: 0.3rem 0;
+    font-weight: 500;
+  }
+  .invoice__feature--answer {
+    font-size: 1rem;
+    margin: 0 0 0.4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .features__section--item-box1 {
+    padding: 6rem 20rem 3rem 0rem;
+  }
+  .features__section--item-box2 {
+    padding: 8rem 0rem 3rem 20rem;
+  }
+  .features__section-data {
+    margin-top: 12rem;
   }
 }

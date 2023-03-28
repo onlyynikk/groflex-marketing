@@ -15,7 +15,10 @@ export default function Payments() {
             payments against invoices and set reminders for balance payments.
           </p>
           <div className="section__wrapper--seemore-div">
-            <Link to="/" className="section__wrapper--seemore">
+            <Link
+              to="/features/invoice-and-quotation"
+              className="section__wrapper--seemore"
+            >
               See more
             </Link>
           </div>

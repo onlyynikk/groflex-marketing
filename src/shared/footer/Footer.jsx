@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className="footer__wrapper--main">
       <div>
-        <Link to="/">
+        <Link to="/" className="name-logo">
           <img src={groflex1} alt="name logo" className="name-logo" />
         </Link>
       </div>

@@ -6,7 +6,7 @@ import "./btnlight.css";
 export default function BtnLight({ text }) {
   return (
     <div>
-      <Link className="btn__light btn__margin" to="https://app.groflex.io/">
+      <Link className="btn__light btn__margin" to="https://app.groflex.in/">
         {text}
       </Link>
     </div>

@@ -12,6 +12,16 @@ export default function HamburgerMenu({ setToggle }) {
   const [featuresArrow, setfeaturesArrow] = useState(false);
   const [resourcesArrow, setresourcesArrow] = useState(false);
 
+  function handleFeaturesClick() {
+    setfeaturesArrow(!featuresArrow);
+    setresourcesArrow(false);
+  }
+
+  function handleResourcesClick() {
+    setresourcesArrow(!resourcesArrow);
+    setfeaturesArrow(false);
+  }
+
   function handleScroll() {
     setToggle(false);
   }
@@ -33,10 +43,7 @@ export default function HamburgerMenu({ setToggle }) {
         >
           Home
         </Link>
-        <Link
-          className="hamburger__menu--link"
-          onClick={() => setfeaturesArrow(!featuresArrow)}
-        >
+        <Link className="hamburger__menu--link" onClick={handleFeaturesClick}>
           Features <IoIosArrowDown />
         </Link>
         {featuresArrow && (
@@ -50,16 +57,13 @@ export default function HamburgerMenu({ setToggle }) {
             </Link>
           </div>
         )}
-        <Link
-          className="hamburger__menu--link"
-          onClick={() => setresourcesArrow(!resourcesArrow)}
-        >
+        <Link className="hamburger__menu--link" onClick={handleResourcesClick}>
           Resources <IoIosArrowDown />
         </Link>
         {resourcesArrow && (
           <div className="dropdown__link">
             <Link
-              to="https://groflex.io/blog/"
+              to="https://blog.groflex.in/"
               className="hamburger__menu--link"
               onClick={() => setToggle(false)}
             >

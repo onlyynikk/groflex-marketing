@@ -199,20 +199,23 @@ export default function ContactUs() {
             <img src={text} alt="text-icon" />
             <p>
               PRESS
-              <br /> marketing@groflex.io
+              <br /> marketing@groflex.in
             </p>
           </div>
           <div className="contact__box--item">
             <img src={mail} alt="mail-icon" />
             <p>
               GENERAL QUESTION <br />
-              info@groflex.io
+              info@groflex.in
             </p>
           </div>
         </div>
       </div>
       <div className="contact__section4">
-        <Banner />
+        <Banner
+          title={"FREE Forever Unlimited Quotations & Invoices"}
+          subtitle={"NO CARD/PAYMENT IS NEEDED TO SIGN UP"}
+        />
       </div>
     </div>
   );

@@ -82,6 +82,15 @@
     display: grid;
     gap: 1rem;
   }
+  .data__section--title {
+    font-size: 2rem;
+  }
+  .data__section-subtitle {
+    font-size: 20px;
+  }
+  .data-card {
+    padding: 20px 0 0 0;
+  }
 }
 
 @media screen and (min-width: 1720px) {

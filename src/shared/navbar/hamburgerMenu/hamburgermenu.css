@@ -18,7 +18,7 @@
     background-color: white;
     position: fixed;
     display: block;
-    margin-top: 8rem;
+    margin-top: 6rem;
     width: 100%;
     z-index: 9999;
   }
@@ -67,7 +67,7 @@
     background-color: white;
     position: fixed;
     display: block;
-    margin-top: 8rem;
+    margin-top: 3rem;
     width: 100%;
     z-index: 9999;
     transition: all 250ms ease-in-out;
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.75rem 0;
+    margin: 0;
     text-decoration: none;
     color: black;
   }
@@ -92,7 +92,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 1.125rem;
+    margin: 0.4rem;
   }
   .hamburger__menu--btn {
     margin: 0.5rem 0 0 0;

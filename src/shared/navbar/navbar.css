@@ -144,7 +144,7 @@
   }
 
   .navbar {
-    padding: 2.5rem 5rem 1.5rem 5rem;
+    padding: 1rem 5rem 1rem 5rem;
   }
 }
 
@@ -157,7 +157,11 @@
   }
 
   .navbar {
-    padding: 2.5rem 2rem 1.5rem 2rem;
+    padding: 0.5rem 2rem 0.3rem 2rem;
+  }
+  .navbar-logo-img img {
+    height: 35px;
+    width: 110px;
   }
 }
 

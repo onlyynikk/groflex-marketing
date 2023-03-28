@@ -29,22 +29,13 @@
   color: #242424;
 }
 
-.terms__wrapper--ul {
+.termsandcondition__wrapper--ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.terms__wrapper--ul li::before {
-  content: "\2022";
-  color: #00a353;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.terms__wrapper--ul li {
+.termsandcondition__wrapper--ul li {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
@@ -56,7 +47,7 @@
 
 @media screen and (min-width: 1720px) {
   .term__main--section {
-    padding: 10rem 20rem 1rem 20rem;
+    padding: 15rem 20rem 1rem 20rem;
   }
 }
 
@@ -72,24 +63,23 @@
     font-size: 1.625rem;
   }
 
-  .terms__wrapper--ul li {
+  .termsandcondition__wrapper--ul li {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 360px) {
   .term__main--section {
-    padding: 10rem 2rem 1.5rem 2rem;
+    padding: 6rem 2rem 1.5rem 2rem;
   }
   .termsandcondition__title {
-    font-size: 0.625rem;
+    font-size: 1.8rem;
   }
 
   .termsandcondition__subtitle {
-    font-size: 0.5rem;
+    font-size: 1.3rem;
   }
-
-  .terms__wrapper--ul li {
-    font-size: 0.325rem;
+  .termsandcondition__wrapper--ul li {
+    font-size: 15px;
   }
 }

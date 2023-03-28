@@ -61,7 +61,7 @@ export default function Navlinks() {
             >
               <Link
                 className="dropdown__menu--link"
-                to="https://groflex.io/blog/"
+                to="https://blog.groflex.in/"
               >
                 Blogs
               </Link>

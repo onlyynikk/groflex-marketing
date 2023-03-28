@@ -57,6 +57,9 @@
   .container p {
     margin: 1rem 1rem 1rem 0;
   }
+  .faq__container h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1720px) {

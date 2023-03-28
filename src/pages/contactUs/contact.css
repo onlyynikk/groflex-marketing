@@ -373,6 +373,44 @@
     display: flex;
     flex-direction: column;
   }
+  .contact__section1 {
+    padding-bottom: 1rem;
+  }
+  .contact__section1 h1 {
+    font-size: 2rem;
+  }
+  .contact__section1 p {
+    font-size: 1.5rem;
+  }
+  .contact__section2 {
+    padding: 20px 25px;
+    margin: 0;
+  }
+
+  .input__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 19px;
+    gap: 8px;
+    margin-bottom: 24px;
+    width: 260px;
+    height: 43px;
+    border: none;
+    background: #e9f3f9;
+    border-radius: 4px;
+    margin-right: 0;
+  }
+  .contact__location p {
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+  .contact__box--item p {
+    font-size: 16px;
+  }
+  .contact__location {
+    height: 300px;
+  }
 }
 
 @media screen and (min-width: 1720px) {

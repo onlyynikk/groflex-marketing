@@ -18,7 +18,7 @@ export default function Features() {
             <img
               src={casio}
               alt="calculator"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Quotations
           </h2>
@@ -26,7 +26,10 @@ export default function Features() {
             Send quotations to clients instantly. Gone are the days of stress
             over heavy paperwork.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>
@@ -35,7 +38,7 @@ export default function Features() {
             <img
               src={paper}
               alt="paper"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Invoices
           </h2>
@@ -43,7 +46,10 @@ export default function Features() {
             Generate GST-compliant invoices and convert estimates with ease
             using our custom invoice tool.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>
@@ -52,7 +58,7 @@ export default function Features() {
             <img
               src={card}
               alt="credit card"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Payments
           </h2>
@@ -60,7 +66,10 @@ export default function Features() {
             Effortlessly handle online payments, track transactions, and send
             payment reminders automatically.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>
@@ -69,7 +78,7 @@ export default function Features() {
             <img
               src={bar}
               alt="bar graph"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Database
           </h2>
@@ -77,7 +86,10 @@ export default function Features() {
             Efficiently manage customer and article data in one place for
             streamlined business operations.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>
@@ -86,7 +98,7 @@ export default function Features() {
             <img
               src={team}
               alt="team"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Teams
           </h2>
@@ -94,7 +106,10 @@ export default function Features() {
             Collaborate with employees and
             <br /> accountant to track business operations with controls.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>
@@ -103,7 +118,7 @@ export default function Features() {
             <img
               src={clock}
               alt="timer"
-              style={{ width: "53px", height: "53px" }}
+              // style={{ width: "53px", height: "53px" }}
             />
             Dashboard
           </h2>
@@ -111,7 +126,10 @@ export default function Features() {
             Thoroughly analyze your business with an easy-to-read comprehensive
             dashboard.
           </p>
-          <Link to="/" className="features__seemore">
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
             See more
           </Link>
         </div>

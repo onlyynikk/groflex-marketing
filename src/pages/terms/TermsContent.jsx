@@ -9,7 +9,7 @@ export default function TermsContent() {
       </div>
       <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">A. Scope of Application</h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             These terms and conditions are the basis of all contracts for
             deliveries and services of GrofleX Technology Private Limited
@@ -35,7 +35,7 @@ export default function TermsContent() {
         <h3 className="termsandcondition__subtitle">
           B. Conclusion of Contract
         </h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             The presentation of the products in the online shop does not yet
             constitute a legally binding offer to conclude a purchase contract
@@ -51,7 +51,7 @@ export default function TermsContent() {
       </div>
       <div>
         <h3 className="termsandcondition__subtitle">C. Prices</h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             The prices stated on the product pages are basically net prices and
             GST is added to the subscription plans
@@ -60,7 +60,7 @@ export default function TermsContent() {
       </div>
       <div>
         <h3 className="termsandcondition__subtitle">D. Payment</h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             Downloads and software activations (digital content not on a
             physical data carrier) are provided immediately with the consent of
@@ -76,7 +76,7 @@ export default function TermsContent() {
       </div>
       <div>
         <h3 className="termsandcondition__subtitle">E. Content of Contract</h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             Unless otherwise stated, at the time of conclusion of the contract,
             the customer receives the non-exclusive rights to access the
@@ -106,7 +106,7 @@ export default function TermsContent() {
       </div>
       <div>
         <h3 className="termsandcondition__subtitle">F. Payment</h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             Depending on the plan selection, the payment methods Digital payment
             or bank transfer are available
@@ -132,7 +132,7 @@ export default function TermsContent() {
         <h3 className="termsandcondition__subtitle">
           G. Warranty, maintenance, the rectification of defects
         </h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             Warranty: GrofleX guarantees that the products are usable in
             accordance with the respective program description and that the
@@ -183,7 +183,7 @@ export default function TermsContent() {
         <h3 className="termsandcondition__subtitle">
           H. Cancellation & Refund Policy
         </h3>
-        <ul className="terms__wrapper--ul">
+        <ul className="termsandcondition__wrapper--ul">
           <li>
             If you are a customer, you are entitled to a statuary right of
             revocation, you will receive a cancellation policy for revocation

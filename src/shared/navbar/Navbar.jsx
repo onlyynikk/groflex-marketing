@@ -45,7 +45,7 @@ export default function Navbar() {
             ) : (
               <HiMenu
                 color="green"
-                size={45}
+                size={30}
                 onClick={() => setToggleMenu(true)}
               />
             )}

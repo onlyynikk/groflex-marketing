@@ -270,15 +270,44 @@
     font-family: "Mulish";
     font-style: normal;
     font-weight: 900;
-    font-size: 2.625rem;
+    font-size: 1.5rem;
     line-height: 150%;
     letter-spacing: 2px;
     margin: 0;
+  }
+  .tab__buttons {
+    margin: 1rem 0 1rem 0;
+  }
+  .tab__button {
+    background: none;
+    border: none;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 155%;
+    text-align: center;
+    margin-right: 8px;
+  }
+
+  .tab__button:hover {
+    border-bottom: 1px solid #00a353;
+  }
+
+  .tab__button--active {
+    border-bottom: 2px solid #00a353;
   }
 
   .section__wrapper {
     position: none;
     background-color: #edf7ff;
+  }
+
+  .section__wrapper--title {
+    font-size: 1.3rem;
+  }
+  .section__wrapper--img {
+    margin-top: 1rem;
   }
 
   .section__container-tabs {
