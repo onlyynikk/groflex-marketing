@@ -2,13 +2,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 6rem 6.25rem 3rem 0rem;
+  padding: 6rem 6.25rem 6rem 0rem;
 }
 .features__section--item-box2 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 8rem 0rem 3rem 6.25rem;
+  padding: 8rem 0rem 4rem 6.25rem;
 }
 
 .gradient__blur {
@@ -155,10 +155,10 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 1080px) {
   .features__section--item-box1 {
-    padding: 6rem 1rem 3rem 0rem;
+    padding: 6rem 1rem 6rem 0rem;
   }
   .features__section--item-box2 {
-    padding: 8rem 0rem 3rem 2rem;
+    padding: 8rem 0rem 4rem 2rem;
   }
   .features__page--mobile-img {
     display: none;
@@ -175,7 +175,7 @@
     display: none;
   }
   .features__section--item-box1 {
-    padding: 3rem;
+    padding: 4rem;
 
     display: flex;
     align-items: center;
@@ -183,7 +183,7 @@
     flex-direction: column;
   }
   .features__section--item-box2 {
-    padding: 3rem;
+    padding: 4rem;
 
     display: flex;
     align-items: center;
@@ -226,14 +226,14 @@
     display: none;
   }
   .features__section--item-box1 {
-    padding: 1rem 1.3rem;
+    padding: 3rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
   .features__section--item-box2 {
-    padding: 1rem 1.3rem;
+    padding: 3rem 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
