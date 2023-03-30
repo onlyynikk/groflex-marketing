@@ -1,5 +1,5 @@
 .features__container {
-  padding: 6.25rem 6.25rem 10rem 6.25rem;
+  padding: 10rem 6.25rem 15rem 6.25rem;
 }
 
 .features__title {
@@ -44,14 +44,14 @@
 .features__seemore {
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 2px solid #0071ca;
+  border-bottom: 1px solid #0071ca;
   color: black;
   padding: 0;
   margin: 0;
 }
 .features__seemore:hover {
   color: #0071ca;
-  border-bottom: 2px solid #0071ca;
+  border-bottom: 1px solid #0071ca;
 }
 
 .card p {
@@ -71,7 +71,7 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .features__container {
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 10rem 5rem 10rem 5rem;
   }
   .features__heading {
     font-family: "Mulish";
@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 768px) and (min-width: 360px) {
   .features__container {
-    padding: 1rem 1.9rem 3.75rem 1.9rem;
+    padding: 5rem 1.9rem 6rem 1.9rem;
   }
   .features__title {
     font-family: "Mulish";

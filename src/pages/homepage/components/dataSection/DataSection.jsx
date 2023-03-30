@@ -25,9 +25,11 @@ export default function DataSection() {
             />
 
             <p className="data__section-para">
-              We optimize encryption for sensitive data in our database and
-              ensure maximum security and availability through SSL certification
-              and automatic backups.
+              We optimize encryption for sensitive data in our database and{" "}
+              <span className="secondary-highlight">
+                ensure maximum security
+              </span>{" "}
+              and availability through SSL certification and automatic backups.
             </p>
           </div>
         </div>
@@ -40,8 +42,11 @@ export default function DataSection() {
             />
             <p className="data__section-para">
               At grofleX, we use advanced AES256 encryption technology for our
-              cloudbased software and prioritize safeguarding against cyber and
-              hacker attacks.
+              cloudbased software and{" "}
+              <span className="secondary-highlight">
+                prioritize safeguarding
+              </span>{" "}
+              against cyber and hacker attacks.
             </p>
           </div>
         </div>
@@ -53,9 +58,14 @@ export default function DataSection() {
               className="data--section--icon cloud-icon"
             />
             <p className="data__section-para">
-              We store your grofleX data in secure, European locations using
-              multi protected VdS servers with top-level data security
-              encryption and privacy measures.
+              <span className="secondary-highlight">
+                We store your grofleX data in secure,
+              </span>{" "}
+              European locations{" "}
+              <span className="secondary-highlight">
+                using multi protected VdS servers
+              </span>{" "}
+              with top-level data security encryption and privacy measures.
             </p>
           </div>
         </div>

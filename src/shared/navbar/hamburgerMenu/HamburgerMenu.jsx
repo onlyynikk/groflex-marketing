@@ -63,7 +63,7 @@ export default function HamburgerMenu({ setToggle }) {
         {resourcesArrow && (
           <div className="dropdown__link">
             <Link
-              to="https://blog.groflex.in/"
+              to="https://blog.groflex.in"
               className="hamburger__menu--link"
               onClick={() => setToggle(false)}
             >

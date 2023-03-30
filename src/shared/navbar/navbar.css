@@ -135,16 +135,17 @@
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .navbar {
+    padding: 1rem 5rem 1rem 5rem;
+  }
+}
+@media only screen and (max-width: 1010px) and (min-width: 768px) {
   .navbar__link--container {
     display: none;
   }
 
   .navbar__btn--container {
     display: none;
-  }
-
-  .navbar {
-    padding: 1rem 5rem 1rem 5rem;
   }
 }
 

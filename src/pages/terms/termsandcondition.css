@@ -1,5 +1,5 @@
 .term__main--section {
-  padding: 8rem 5rem 1.5rem 5rem;
+  padding: 8rem 5rem 10rem 5rem;
 }
 
 .termsandcondition__title {
@@ -17,6 +17,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* border: 1px solid red; */
+  margin: 4rem 0;
 }
 
 .termsandcondition__subtitle {
@@ -27,6 +29,7 @@
   line-height: 140%;
   letter-spacing: 1px;
   color: #242424;
+  margin: 0 0 1.5rem 0;
 }
 
 .termsandcondition__wrapper--ul {
@@ -43,6 +46,16 @@
   line-height: 140%;
   letter-spacing: 1px;
   color: black;
+  margin-bottom: 1rem;
+}
+
+.termsandcondition__wrapper--ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: green; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 @media screen and (min-width: 1720px) {

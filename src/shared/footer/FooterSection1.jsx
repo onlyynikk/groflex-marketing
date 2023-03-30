@@ -5,6 +5,7 @@ import twitter from "../../assets/twitter.svg";
 import facebook from "../../assets/facebook.svg";
 import linkdein from "../../assets/linkdein.svg";
 import yt from "../../assets/yt.svg";
+import BtnPrimary from "../btnGreen/BtnPrimary";
 
 export default function FooterSection1() {
   return (
@@ -12,15 +13,23 @@ export default function FooterSection1() {
       <div className="footer__text--container">
         <p className="footer__text">
           Groflex Technology Pvt. Ltd. <br />
-          42, P5, Kudlu Main Rd, Muneshwara <br /> Layout, Haralukunte,
-          Muneshwara
-          <br /> Nagar, Bengaluru, Karnataka
-          <br /> 560068, India
+          42, P5, Kudlu Main Rd,
+          <br /> Muneshwara Layout,
+          <br /> Haralukunte, Muneshwara <br /> Nagar, Bengaluru, Karnataka
+          <br />
+          560068, India
         </p>
-        <p className="footer__text-tablet">
-          Groflex Technology Pvt. Ltd.42, P5, Kudlu Main Rd, Muneshwara Layout,
-          Haralukunte, Muneshwara Nagar, Bengaluru, Karnataka 560068, India
-        </p>
+        <div className="footer__box-2">
+          <div className="footer__box--wrapper">
+            <p>Join Us</p>
+            <input
+              type="text"
+              placeholder="Your email"
+              className="footer__input"
+            />
+            <BtnPrimary className="footer__btn" text={"+ Subscribe"} />
+          </div>
+        </div>
       </div>
       <div className="social__media--icons">
         <div className="social__media--icon">
@@ -29,12 +38,11 @@ export default function FooterSection1() {
           </Link>
         </div>
         <div className="social__media--icon">
-          <Link to=" https://www.facebook.com/groflex">
+          <Link to="https://www.facebook.com/groflex">
             <img src={facebook} alt="facebook" />
           </Link>
         </div>
         <div className="social__media--icon">
-          {" "}
           <Link to="https://www.linkedin.com/company/groflex1/">
             <img src={linkdein} alt="linkdein" />
           </Link>

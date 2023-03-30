@@ -1,6 +1,7 @@
 .slideshow {
   overflow: hidden;
   padding: 6rem 0 2rem 6.25rem;
+  margin: 8rem 0;
 }
 .slideshow h1 {
   font-weight: 800;
@@ -64,6 +65,7 @@
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .slideshow {
     padding: 4rem 0 5rem 2rem;
+    margin: 6rem 0;
   }
   .slides-tablet {
     display: block;
@@ -99,6 +101,7 @@
 @media only screen and (max-width: 768px) and (min-width: 360px) {
   .slideshow {
     padding: 4rem 2rem 2rem 2rem;
+    margin: 4rem 0;
   }
 
   .slides-tablet {

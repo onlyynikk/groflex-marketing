@@ -9,12 +9,8 @@ export default function InvoiceAndQuotation() {
       <InvoiceHeader />
       <QuotaionFeatures />
       <Banner
-        title={
-          "Ready to simplify your invoicing and quoting process? Try grofleX today!"
-        }
-        subtitle={
-          "Say hello to an efficient business management with our powerful app."
-        }
+        title={"FREE Forever Unlimited Quotations & Invoices"}
+        subtitle={"NO CARD/PAYMENT IS NEEDED TO SIGN UP"}
       />
     </div>
   );

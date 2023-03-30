@@ -15,7 +15,7 @@ export default function FooterSection1() {
         <div className="footer__ul">
           <h3>Learn</h3>
 
-          <Link to="https://blog.groflex.in/">Blog</Link>
+          <Link to="https://blog.groflex.in">Blog</Link>
         </div>
       </div>
       <div>

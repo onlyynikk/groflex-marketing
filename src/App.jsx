@@ -8,6 +8,7 @@ import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import Footer from "./shared/footer/Footer";
 import ScrollToTop from "./helpers/ScrollToTop";
 import InvoiceAndQuotation from "./pages/invoiceAndQuotation/InvoiceAndQuotation";
+import CashAndBank from "./pages/cashAndBank/CashAndBank";
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
           path="/features/invoice-and-quotation"
           element={<InvoiceAndQuotation />}
         />
+        <Route
+          path="/features/cash&bank-and-Reconcilliation"
+          element={<CashAndBank />}
+        />
+        <Route path="*" element={<Homepage />} />
       </Routes>
 
       <Footer />

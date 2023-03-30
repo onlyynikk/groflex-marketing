@@ -31,7 +31,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">
           B. Conclusion of Contract
         </h3>
@@ -49,7 +49,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">C. Prices</h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>
@@ -58,7 +58,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">D. Payment</h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>
@@ -74,7 +74,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">E. Content of Contract</h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>
@@ -104,7 +104,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">F. Payment</h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>
@@ -128,7 +128,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">
           G. Warranty, maintenance, the rectification of defects
         </h3>
@@ -179,7 +179,7 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">
           H. Cancellation & Refund Policy
         </h3>

@@ -5,6 +5,7 @@ import Banner from "../homepage/components/banner/Banner";
 import pin from "../../assets/pin.svg";
 import text from "../../assets/text-icon.svg";
 import mail from "../../assets/mail-icon.svg";
+import BtnPrimary from "../../shared/btnGreen/BtnPrimary";
 
 export default function ContactUs() {
   const user = {
@@ -113,104 +114,109 @@ export default function ContactUs() {
           <p>Let us know how we could help you</p>
         </div>
         <div className="contact__section2">
-          <p className="contact__subtitle">
-            Send Your details. Our sales team will get back to you shortly.
-          </p>
-          <form onSubmit={handleSubmit}>
-            <div className="input__items">
+          <div className="contact__subtitle">
+            <p>
+              Send Your details. Our sales team will get back to you shortly.
+            </p>
+          </div>
+
+          <div>
+            <form onSubmit={handleSubmit}>
+              <div className="input__items">
+                <div>
+                  <input
+                    className="input__item"
+                    placeholder="Name"
+                    type="text"
+                    name="userName"
+                    value={userName}
+                    onChange={(e) => setUserName(e.target.value)}
+                    required
+                  />
+                  {/* <span className="error-msge">error</span> */}
+                </div>
+                <div>
+                  <input
+                    className="input__item"
+                    placeholder="Contact Number"
+                    type="number"
+                    name="contact"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
+                    required
+                  />
+                  {/* <span className="error-msge">error</span> */}
+                </div>
+              </div>
+              <div className="input__items--section2">
+                <input
+                  type="email"
+                  placeholder="Email ID"
+                  className="input__long"
+                  required
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <span className="error-msge">error</span>
+              </div>
               <div>
                 <input
-                  className="input__item"
-                  placeholder="Name"
                   type="text"
-                  name="userName"
-                  value={userName}
-                  onChange={(e) => setUserName(e.target.value)}
+                  placeholder="Company Name"
+                  className="input__long"
                   required
+                  name="company-name"
+                  value={companyName}
+                  onChange={(e) => setCompanyName(e.target.value)}
                 />
                 {/* <span className="error-msge">error</span> */}
               </div>
               <div>
-                <input
-                  className="input__item"
-                  placeholder="Contact Number"
-                  type="number"
-                  name="contact"
-                  value={contact}
-                  onChange={(e) => setContact(e.target.value)}
-                  required
+                <textarea
+                  placeholder="Message"
+                  value={message}
+                  className="input__textarea"
+                  onChange={(e) => setMessage(e.target.value)}
                 />
-                {/* <span className="error-msge">error</span> */}
               </div>
-            </div>
-            <div className="input__items--section2">
-              <input
-                type="email"
-                placeholder="Email ID"
-                className="input__long"
-                required
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <span className="error-msge">error</span>
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Company Name"
-                className="input__long"
-                required
-                name="company-name"
-                value={companyName}
-                onChange={(e) => setCompanyName(e.target.value)}
-              />
-              {/* <span className="error-msge">error</span> */}
-            </div>
-            <div>
-              <textarea
-                placeholder="Message"
-                value={message}
-                className="input__textarea"
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </div>
-            <div className="submit__btn--container">
-              <button onClick={handleClick}>
-                <img src={rocket} alt="rocket" className="btn__icon" />
-                Submit
-              </button>
-            </div>
-            {/* {user.name && <h1>Success</h1>} */}
-          </form>
+              <div className="submit__btn--container">
+                <BtnPrimary text={"Sign Up"} />
+              </div>
+              {/* {user.name && <h1>Success</h1>} */}
+            </form>
+          </div>
         </div>
-      </div>
-      <div className="contact__section3">
-        <div className="contact__location">
-          <img src={pin} alt="pin" />
-          <p>
-            GROFLEX LOCATION <br />
-            42, P5, Kudlu Main Rd, Muneshwara Layout, Haralukunte, Muneshwara
-            Nagar, Bengaluru, Karnataka 560068, India
-          </p>
-        </div>
-        <div className="contact__box--items">
-          <div className="contact__box--item">
-            <img src={text} alt="text-icon" />
+        <div className="contact__section3">
+          <div className="contact__location">
+            <img src={pin} alt="pin" />
             <p>
-              PRESS
-              <br /> marketing@groflex.in
+              GROFLEX TECHNOLOGIES Pvt. Ltd <br />
+              42, P5, Kudlu Main Rd, <br /> MuneshwaraLayout, Haralukunte,
+              <br />
+              Muneshwara Nagar, Bengaluru, <br />
+              Karnataka 560068, India
             </p>
           </div>
-          <div className="contact__box--item">
-            <img src={mail} alt="mail-icon" />
-            <p>
-              GENERAL QUESTION <br />
-              info@groflex.in
-            </p>
+          <div className="contact__box--items">
+            <div className="contact__box--item">
+              <img src={text} alt="text-icon" />
+              <p>
+                PRESS
+                <br /> marketing@groflex.in
+              </p>
+            </div>
+            <div className="contact__box--item">
+              <img src={mail} alt="mail-icon" />
+              <p>
+                GENERAL QUESTION <br />
+                info@groflex.in
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
       <div className="contact__section4">
         <Banner
           title={"FREE Forever Unlimited Quotations & Invoices"}
