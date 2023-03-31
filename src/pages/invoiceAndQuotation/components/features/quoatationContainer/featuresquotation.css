@@ -17,10 +17,10 @@
     rgba(0, 163, 83, 0.24) 8.46%,
     rgba(0, 113, 202, 0.16) 75.92%
   );
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* position: absolute;
+  filter: blur(114px);
+  transform: matrix(-0.97, 0.23, 0.23, 0.97, 0, 0);
+  z-index: -1; */
 }
 
 .features__section--item-box2::after {

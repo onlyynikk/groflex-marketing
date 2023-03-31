@@ -29,7 +29,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Streamlined financial management for businesses.
           </p>
@@ -37,7 +36,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Error-free transactions with reconciliation feature.
           </p>
@@ -45,7 +43,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Efficient time management for businesses.
           </p>
@@ -53,7 +50,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Easy-to-use financial management tools for SMEs.
           </p>

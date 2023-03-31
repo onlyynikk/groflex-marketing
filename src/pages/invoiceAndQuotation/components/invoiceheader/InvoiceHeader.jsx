@@ -24,6 +24,7 @@ export default function InvoiceHeader() {
           <img src={quotationsimg} alt="quotations gif" />
         </div>
       </div>
+      <div>{/* <FeaturesCta /> */}</div>
       <div className="invoice__header--section2">
         <div className="invoice__header--section2--title">
           <h1>Eliminate your manual work with automation</h1>

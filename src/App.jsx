@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./shared/navbar/Navbar";
 import Homepage from "./pages/homepage/Homepage";
 import ContactUs from "./pages/contactUs/ContactUs";
@@ -29,7 +29,7 @@ function App() {
           path="/features/cash&bank-and-Reconcilliation"
           element={<CashAndBank />}
         />
-        <Route path="*" element={<Homepage />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
       <Footer />
