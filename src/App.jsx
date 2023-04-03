@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./shared/navbar/Navbar";
 import Homepage from "./pages/homepage/Homepage";
 import ContactUs from "./pages/contactUs/ContactUs";
@@ -9,6 +9,7 @@ import Footer from "./shared/footer/Footer";
 import ScrollToTop from "./helpers/ScrollToTop";
 import InvoiceAndQuotation from "./pages/invoiceAndQuotation/InvoiceAndQuotation";
 import CashAndBank from "./pages/cashAndBank/CashAndBank";
+import GeneralAccounting from "./pages/generalAccounting/GeneralAccounting";
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
           path="/features/cash&bank-and-Reconcilliation"
           element={<CashAndBank />}
         />
-        <Route path="*" element={<Homepage />} />
+        <Route
+          path="/features/general-accounting"
+          element={<GeneralAccounting />}
+        />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
       <Footer />

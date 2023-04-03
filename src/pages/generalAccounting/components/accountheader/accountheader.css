@@ -1,0 +1,33 @@
+.account__header--container {
+  padding: 12rem 6rem 1rem 5rem;
+  background: radial-gradient(
+    177.22% 158.16% at 48.96% -8.09%,
+    rgba(0, 163, 83, 0.3) 0%,
+    rgba(237, 247, 255, 0.3) 47.89%,
+    rgba(237, 247, 255, 0.1) 74.99%
+  );
+}
+
+.account__header--container h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.account__header--wrapper {
+  display: flex;
+}
+.account__header--text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  margin: 0 3rem 4rem 0;
+}
+
+.account__header--img img {
+  width: 100%;
+  height: auto;
+}
