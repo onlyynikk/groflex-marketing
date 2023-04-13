@@ -1,14 +1,16 @@
 import "./accountheader.css";
 import React from "react";
-import hero from "../../../../assets/browser-frame.png";
+import accountingframe from "../../../../assets/generalAcc/generalAcc-frame.png";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
+import FeaturesCTA from "../../../../helpers/featuresCTA/FeaturesCTA";
+import { AiOutlineCheck } from "react-icons/ai";
 
 export default function AccountingHeader() {
   return (
     <div className="account__header--container">
-      <h1>Accounting made easy for all</h1>
       <div className="account__header--wrapper">
         <div className="account__header--text">
+          <h1>Accounting made easy for all</h1>
           <p>
             GrofleX offers an easy all-in-on accounting solution with ledger
             creation, bulk payments, document management, credit and debit
@@ -18,7 +20,29 @@ export default function AccountingHeader() {
           <BtnPrimary text={"sign up for free"} />
         </div>
         <div className="account__header--img">
-          <img src={hero} alt="frame" />
+          <img src={accountingframe} alt="frame" />
+        </div>
+      </div>
+      <FeaturesCTA />
+      <div className="accounting__header--list">
+        <h1>Enhanced data management and tracking</h1>
+        <div className="accounting__header--list-items">
+          <p>
+            <AiOutlineCheck className="accounting__checkmark" /> Improved
+            organization and management of financial data.
+          </p>
+          <p>
+            <AiOutlineCheck className="accounting__checkmark" /> Enhanced
+            tracking of customer transactions and credit balances.
+          </p>
+          <p>
+            <AiOutlineCheck className="accounting__checkmark" /> Accurate and
+            efficient classification of financial accounts.
+          </p>
+          <p>
+            <AiOutlineCheck className="accounting__checkmark" /> User-friendly
+            tools for managing account transactions.
+          </p>
         </div>
       </div>
     </div>

@@ -1,0 +1,83 @@
+.accounting__box--even {
+  margin: 8rem 0 5rem 0;
+  display: flex;
+}
+
+.accounting__even--wrapper {
+  padding: 3rem 6rem 0 4rem;
+}
+
+.accounting__even--img img {
+  width: 100%;
+  height: auto;
+}
+
+.accounting__even--header .accounting__odd--header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: #272d30;
+}
+
+.accounting__even--header .accounting__odd--header p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+
+.accounting__box--odd {
+  margin: 8rem 0 5rem 0;
+  display: flex;
+}
+
+.accounting__odd--wrapper {
+  padding: 3rem 4rem 0 6rem;
+}
+
+.accounting__odd--img img {
+  width: 100%;
+  height: auto;
+}
+
+.gradient--color {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 113, 202, 0) -3.56%,
+    rgba(0, 113, 202, 0.175) 25.81%,
+    rgba(0, 163, 83, 0.175) 70.66%,
+    rgba(0, 163, 83, 0) 98.97%
+  );
+  opacity: 0.8;
+}
+.accounting__mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) and (min-width: 360px) {
+  .accounting__desktop {
+    display: none;
+  }
+  .accounting__mobile {
+    display: block;
+  }
+
+  .accounting__mobile--img img {
+    width: 100%;
+    height: auto;
+  }
+  .accounting__mobile--header {
+    padding: 0 1rem;
+  }
+  .accounting__mobile--header h1 {
+    font-size: 25px;
+  }
+  .mobile__wrapper {
+    padding: 4rem 2rem;
+    margin-bottom: 4rem;
+  }
+}

@@ -7,7 +7,7 @@ export default function Banner({ title, subtitle }) {
     <div className="banner__container">
       <h1 className="banner__title">{title}</h1>
       <p className="banner__text">{subtitle}</p>
-      <BtnPrimary text={"Sign up for free"} />
+      <BtnPrimary text={"Sign up for free"} to={"https://app.groflex.in/"} />
     </div>
   );
 }

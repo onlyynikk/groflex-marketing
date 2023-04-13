@@ -75,10 +75,13 @@ export default function HamburgerMenu({ setToggle }) {
       <hr style={{ border: "1px solid #0071ca" }} />
       <div className="hamburger__menu--buttons">
         <div className="hamburger__menu--btn">
-          <BtnLight text={"Sign In"} />
+          <BtnLight text={"Sign In"} to={"https://app.groflex.in/"} />
         </div>
         <div className="hamburger__menu--btn">
-          <BtnPrimary text={"Sign Up for free"} />
+          <BtnPrimary
+            text={"Sign Up for free"}
+            to={"https://app.groflex.in/"}
+          />
         </div>
       </div>
     </div>

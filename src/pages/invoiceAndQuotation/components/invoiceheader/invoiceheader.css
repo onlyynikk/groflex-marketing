@@ -23,6 +23,10 @@
   color: #272d30;
 }
 
+.invoice__header--featureCTA--wrapper {
+  margin-bottom: 12rem;
+}
+
 .invoice__header--title h1 {
   font-family: "Mulish";
   font-style: normal;
@@ -35,6 +39,7 @@
 .invoice__header--section-gif img {
   width: 100%;
   height: auto;
+  border-radius: 2.39947px;
 }
 .invoice__header--section-gif {
   box-shadow: 3px 5px 80px 13px rgba(0, 113, 202, 0.3);

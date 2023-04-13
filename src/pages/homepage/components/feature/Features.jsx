@@ -5,14 +5,94 @@ import casio from "../../../../assets/casio.svg";
 import paper from "../../../../assets/paper.svg";
 import card from "../../../../assets/card.svg";
 import bar from "../../../../assets/bar.svg";
-import team from "../../../../assets/team.svg";
-import clock from "../../../../assets/clock.svg";
+import money from "../../../../assets/money.svg";
+import book from "../../../../assets/book.svg";
 
 export default function Features() {
   return (
     <div className="features__container">
       <h1 className="features__title">Key Features</h1>
       <div className="cards">
+        <div className="card">
+          <h2 className="features__heading">
+            <img
+              src={money}
+              alt="bar graph"
+              // style={{ width: "53px", height: "53px" }}
+            />
+            Finances
+          </h2>
+          <p className="features__text">
+            Organize your finances, enable editing of sub-accounts, manage
+            transactions, filter, sort and add new transactions with ease.
+          </p>
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
+            See more
+          </Link>
+        </div>
+        <div className="card">
+          <h2 className="features__heading">
+            <img
+              src={bar}
+              alt="bar graph"
+              // style={{ width: "53px", height: "53px" }}
+            />
+            Charts
+          </h2>
+          <p className="features__text">
+            Easily edit bank and cash account details, view cash flow chart, and
+            customize time periods for financial analysis.
+          </p>
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
+            See more
+          </Link>
+        </div>
+        <div className="card">
+          <h2 className="features__heading">
+            <img
+              src={card}
+              alt="credit card"
+              // style={{ width: "53px", height: "53px" }}
+            />
+            Transactions
+          </h2>
+          <p className="features__text">
+            Efficient transaction reconciliation by selecting matching
+            transactions, editing, and adding missing ones.
+          </p>
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
+            See more
+          </Link>
+        </div>
+        <div className="card">
+          <h2 className="features__heading">
+            <img
+              src={book}
+              alt="bar graph"
+              // style={{ width: "53px", height: "53px" }}
+            />
+            Accounting
+          </h2>
+          <p className="features__text">
+            An all-in-one accounting solution with ledger creation, bulk
+            payments, document management and credit and debit notes.
+          </p>
+          <Link
+            to="/features/invoice-and-quotation"
+            className="features__seemore"
+          >
+            See more
+          </Link>
+        </div>
         <div className="card">
           <h2 className="features__heading">
             <img
@@ -45,86 +125,6 @@ export default function Features() {
           <p className="features__text">
             Generate GST-compliant invoices and convert estimates with ease
             using our custom invoice tool.
-          </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
-            See more
-          </Link>
-        </div>
-        <div className="card">
-          <h2 className="features__heading">
-            <img
-              src={card}
-              alt="credit card"
-              // style={{ width: "53px", height: "53px" }}
-            />
-            Payments
-          </h2>
-          <p className="features__text">
-            Effortlessly handle online payments, track transactions, and send
-            payment reminders automatically.
-          </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
-            See more
-          </Link>
-        </div>
-        <div className="card">
-          <h2 className="features__heading">
-            <img
-              src={bar}
-              alt="bar graph"
-              // style={{ width: "53px", height: "53px" }}
-            />
-            Database
-          </h2>
-          <p className="features__text">
-            Efficiently manage customer and article data in one place for
-            streamlined business operations.
-          </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
-            See more
-          </Link>
-        </div>
-        <div className="card">
-          <h2 className="features__heading">
-            <img
-              src={team}
-              alt="team"
-              // style={{ width: "53px", height: "53px" }}
-            />
-            Teams
-          </h2>
-          <p className="features__text">
-            Collaborate with employees and
-            <br /> accountant to track business operations with controls.
-          </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
-            See more
-          </Link>
-        </div>
-        <div className="card">
-          <h2 className="features__heading">
-            <img
-              src={clock}
-              alt="timer"
-              // style={{ width: "53px", height: "53px" }}
-            />
-            Dashboard
-          </h2>
-          <p className="features__text">
-            Thoroughly analyze your business with an easy-to-read comprehensive
-            dashboard.
           </p>
           <Link
             to="/features/invoice-and-quotation"

@@ -3,6 +3,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
 import quotationsimg from "../../../../assets/i&q.png";
 import "../../components/invoiceheader/invoiceheader.css";
+import FeaturesCta from "../../../../helpers/featuresCTA/FeaturesCTA";
 
 export default function InvoiceHeader() {
   return (
@@ -18,11 +19,17 @@ export default function InvoiceHeader() {
             dashboard, grofleX ensures efficient, secure and reliable business
             transaction processing.
           </p>
-          <BtnPrimary text={"Sign up for free"} />
+          <BtnPrimary
+            text={"Sign up for free"}
+            to={"https://app.groflex.in/"}
+          />
         </div>
         <div className="invoice__header--section-gif">
           <img src={quotationsimg} alt="quotations gif" />
         </div>
+      </div>
+      <div className="invoice__header--featureCTA--wrapper">
+        <FeaturesCta />
       </div>
       <div className="invoice__header--section2">
         <div className="invoice__header--section2--title">

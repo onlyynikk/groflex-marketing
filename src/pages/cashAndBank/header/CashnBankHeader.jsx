@@ -2,7 +2,9 @@ import React from "react";
 import "./cashnbankheader.css";
 import { AiOutlineCheck } from "react-icons/ai";
 import BtnPrimary from "../../../shared/btnGreen/BtnPrimary";
-import quotation from "../../../assets/cash&bank/cashnbank-quotation.png";
+// import quotation from "../../../assets/cash&bank/cashnbank-quotation.png";
+import cash from "../../../assets/cash&bank/cash&bank hero.png";
+import FeaturesCta from "../../../helpers/featuresCTA/FeaturesCTA";
 
 export default function CashnBankHeader() {
   return (
@@ -19,9 +21,13 @@ export default function CashnBankHeader() {
           <BtnPrimary text={"Sign up for free"} />
         </div>
         <div className="cashnbank__header-img">
-          <img src={quotation} alt="header img" />
+          <img src={cash} alt="header img" />
         </div>
       </div>
+      <div className="cashnbank__featureCTA--container">
+        <FeaturesCta />
+      </div>
+
       <div className="cashnbank__header--section-2">
         <h1>Revolutionizing your financial management tools</h1>
         <div className="cashnbank__header--section-2-cl">
@@ -29,7 +35,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Streamlined financial management for businesses.
           </p>
@@ -37,7 +42,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Error-free transactions with reconciliation feature.
           </p>
@@ -45,7 +49,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Efficient time management for businesses.
           </p>
@@ -53,7 +56,6 @@ export default function CashnBankHeader() {
             <AiOutlineCheck
               className="invoice__header--checkmark--icon"
               color="green"
-              size={40}
             />
             Easy-to-use financial management tools for SMEs.
           </p>

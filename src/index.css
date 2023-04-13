@@ -6,5 +6,9 @@
 body {
   font-family: "Mulish", sans-serif;
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 3500px;
+}
+
+html {
+  scroll-behavior: "smooth";
 }

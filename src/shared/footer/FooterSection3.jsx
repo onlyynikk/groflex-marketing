@@ -8,7 +8,11 @@ export default function FooterSection1() {
       <div className="footer__box--wrapper">
         <p>Join Us</p>
         <input type="text" placeholder="Your email" className="footer__input" />
-        <BtnPrimary className="footer__btn" text={"+ Subscribe"} />
+        <BtnPrimary
+          className="footer__btn"
+          text={"+ Subscribe"}
+          to={"/contact-us"}
+        />
       </div>
     </div>
   );

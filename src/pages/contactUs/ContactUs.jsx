@@ -6,105 +6,124 @@ import pin from "../../assets/pin.svg";
 import text from "../../assets/text-icon.svg";
 import mail from "../../assets/mail-icon.svg";
 import BtnPrimary from "../../shared/btnGreen/BtnPrimary";
+import { Link, useNavigate } from "react-router-dom";
 
-export default function ContactUs() {
+export default function ContactUs({
+  utm_campaign,
+  utm_content,
+  utm_medium,
+  utm_source,
+  utm_term,
+}) {
+  const navigate = useNavigate();
   const user = {
     name: "",
     phone: "",
     email: "",
-    company: "",
+    companyName: "",
     message: "",
+    utm_campaign: "",
+    utm_source: "",
+    utm_medium: "",
+    utm_term: "",
+    utm_content: "",
   };
 
   const [userName, setUserName] = useState("");
-  const [companyName, setCompanyName] = useState("");
+  const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
   const [message, setMessage] = useState("");
-
-  if (user != null) {
-    // if (
-    //   config.releaseStage == "production" ||
-    //   config.releaseStage == "development"
-    // )
-    {
-      const requestOptions = {
-        method: "POST",
-
-        headers: { "Content-Type": "application/json" },
-
-        body: JSON.stringify({
-          grant_type: "client_credentials",
-
-          client_id: "41d4566ba22a7f9bdcbbe05700f4e954",
-
-          client_secret: "b0d1769d2c908263e8ae0423058ff67f",
-        }),
-      };
-
-      fetch("https://api.sendpulse.com/oauth/access_token", requestOptions)
-        .then((response) => response.json())
-
-        .then((data) => {
-          console.log(data);
-
-          const requestOptions1 = {
-            method: "POST",
-
-            headers: {
-              "Content-Type": "application/json",
-
-              Authorization: `Bearer ${data.access_token}`,
-            },
-
-            body: JSON.stringify({
-              emails: [
-                {
-                  email: user.email, // Email
-
-                  variables: {
-                    Name: user.name, // Name
-                    Phone: user.phone, // Contact
-                    Company_Name: user.company, // Company Name
-
-                    UTM_Campaign: user.utm_campaign,
-
-                    UTM_Source: user.utm_source,
-
-                    UTM_Medium: user.utm_medium,
-
-                    UTM_Term: user.utm_term,
-
-                    UTM_Content: user.utm_content,
-                    Message: user.message, // Message
-                  },
-                },
-              ],
-            }),
-          };
-
-          fetch(
-            "https://api.sendpulse.com/addressbooks/121999/emails",
-            requestOptions1
-          )
-            .then((response) => response.json())
-
-            .then((data) => {
-              console.log(data);
-            });
-        });
-    }
-  }
+  // const [submitting, setSubmitting] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
     user.name = userName;
     user.email = email;
-    user.companyName = companyName;
-    user.number = contact;
+    user.companyName = company;
+    user.phone = contact;
     user.message = message;
+    user.utm_campaign = utm_campaign;
+    user.utm_content = utm_content;
+    user.utm_medium = utm_medium;
+    user.utm_source = utm_source;
+    user.utm_term = utm_term;
+
+    if (user != null) {
+      // if (
+      //   config.releaseStage == "production" ||
+      //   config.releaseStage == "development"
+      // )
+      {
+        const requestOptions = {
+          method: "POST",
+
+          headers: { "Content-Type": "application/json" },
+
+          body: JSON.stringify({
+            grant_type: "client_credentials",
+
+            client_id: "41d4566ba22a7f9bdcbbe05700f4e954",
+
+            client_secret: "b0d1769d2c908263e8ae0423058ff67f",
+          }),
+        };
+
+        fetch("https://api.sendpulse.com/oauth/access_token", requestOptions)
+          .then((response) => response.json())
+
+          .then((data) => {
+            console.log(data);
+
+            const requestOptions1 = {
+              method: "POST",
+
+              headers: {
+                "Content-Type": "application/json",
+
+                Authorization: `Bearer ${data.access_token}`,
+              },
+
+              body: JSON.stringify({
+                emails: [
+                  {
+                    email: user.email, // Email
+
+                    variables: {
+                      Name: user.name, // Name
+                      Phone: user.phone, // Contact
+                      Company_Name: user.company, // Company Name
+
+                      UTM_Campaign: user.utm_campaign,
+
+                      UTM_Source: user.utm_source,
+
+                      UTM_Medium: user.utm_medium,
+
+                      UTM_Term: user.utm_term,
+
+                      UTM_Content: user.utm_content,
+                      Message: user.message, // Message
+                    },
+                  },
+                ],
+              }),
+            };
+
+            fetch(
+              "https://api.sendpulse.com/addressbooks/121999/emails",
+              requestOptions1
+            )
+              .then((response) => response.json())
+
+              .then((data) => {
+                console.log(data);
+              });
+          });
+      }
+    }
+    navigate("/contact-success");
   }
-  function handleClick() {}
 
   return (
     <div>
@@ -133,7 +152,6 @@ export default function ContactUs() {
                     onChange={(e) => setUserName(e.target.value)}
                     required
                   />
-                  {/* <span className="error-msge">error</span> */}
                 </div>
                 <div>
                   <input
@@ -145,7 +163,6 @@ export default function ContactUs() {
                     onChange={(e) => setContact(e.target.value)}
                     required
                   />
-                  {/* <span className="error-msge">error</span> */}
                 </div>
               </div>
               <div className="input__items--section2">
@@ -167,10 +184,9 @@ export default function ContactUs() {
                   className="input__long"
                   required
                   name="company-name"
-                  value={companyName}
-                  onChange={(e) => setCompanyName(e.target.value)}
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
                 />
-                {/* <span className="error-msge">error</span> */}
               </div>
               <div>
                 <textarea
@@ -181,12 +197,15 @@ export default function ContactUs() {
                 />
               </div>
               <div className="submit__btn--container">
-                <BtnPrimary text={"Sign Up"} />
+                <button className="contact__btn" type="submit">
+                  <img className="rocket-icon" src={rocket} alt="rocket" />
+                  Submit
+                </button>
               </div>
-              {/* {user.name && <h1>Success</h1>} */}
             </form>
           </div>
         </div>
+
         <div className="contact__section3">
           <div className="contact__location">
             <img src={pin} alt="pin" />

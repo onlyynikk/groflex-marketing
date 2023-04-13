@@ -12,8 +12,7 @@
   font-weight: 700;
   font-size: 3.48rem;
   line-height: 140%;
-
-  letter-spacing: 1px;
+  margin-top: 0;
 }
 .unlimited__container--section1 p {
   font-family: "Mulish";

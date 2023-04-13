@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import BtnPrimary from "../btnGreen/BtnPrimary";
 import HamburgerMenu from "./hamburgerMenu/HamburgerMenu";
 import OnClickOutside from "../onClickOutside/OnClickOutside";
-import OnScroll from "../onScroll/onScroll";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -31,8 +30,11 @@ export default function Navbar() {
           </div>
           <div className="navbar__link--container">
             <Navlinks />
-            <BtnLight text={"Sign in"} />
-            <BtnPrimary text={"Sign up for free"} />
+            <BtnLight text={"Sign in"} to={"https://app.groflex.in/"} />
+            <BtnPrimary
+              text={"Sign up for free"}
+              to={"https://app.groflex.in/"}
+            />
           </div>
 
           <div className="navbar__hamburger--menu">

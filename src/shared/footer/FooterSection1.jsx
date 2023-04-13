@@ -48,7 +48,7 @@ export default function FooterSection1() {
           </Link>
         </div>
         <div className="social__media--icon">
-          <Link to="https://www.youtube.com/">
+          <Link to="https://www.youtube.com/channel/UCs95xdDSodwZ4XY0vM0q0aw">
             <img src={yt} alt="youtube" />
           </Link>
         </div>

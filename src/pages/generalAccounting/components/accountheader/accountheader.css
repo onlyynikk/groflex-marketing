@@ -1,5 +1,5 @@
 .account__header--container {
-  padding: 12rem 6rem 1rem 5rem;
+  padding: 10rem 6rem 1rem 5rem;
   background: radial-gradient(
     177.22% 158.16% at 48.96% -8.09%,
     rgba(0, 163, 83, 0.3) 0%,
@@ -14,20 +14,112 @@
   font-size: 55px;
   line-height: 140%;
   letter-spacing: 1px;
+  margin: 0 0 3rem 0;
 }
 
 .account__header--wrapper {
   display: flex;
+  margin: 3rem 0;
+  margin-bottom: 10rem;
 }
 .account__header--text p {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 155%;
-  margin: 0 3rem 4rem 0;
+  margin: 0 3rem 3rem 0;
 }
-
+.account__header--img {
+  border: 0.102835px solid #0071ca;
+  box-shadow: 1px 3px 10px 8px rgba(0, 0, 0, 0.1),
+    3px 5px 60px 10px rgba(0, 113, 202, 0.25);
+  border-radius: 2.39947px;
+}
 .account__header--img img {
   width: 100%;
   height: auto;
+}
+.accounting__header--list {
+  margin-top: 8rem;
+  padding-top: 3rem;
+}
+.accounting__header--list h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: #272d30;
+}
+
+.accounting__header--list-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  row-gap: 1rem;
+  margin-top: 5rem;
+}
+
+.accounting__header--list-items p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #242424;
+}
+.accounting__checkmark {
+  margin-right: 1rem;
+  font-size: 40px;
+  color: green;
+}
+
+@media screen and (min-width: 1720px) {
+  .account__header--container {
+    padding: 10rem 20rem 1rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .account__header--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .account__header--img {
+    margin: 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .account__header--container h1 {
+    font-size: 35px;
+  }
+  .account__header--container {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+  .account__header--container h1 {
+    font-size: 28px;
+  }
+  .account__header--container p {
+    font-size: 16px;
+  }
+  .account__header--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .account__header--img {
+    margin: 3rem 0;
+  }
+  .accounting__header--list-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin-top: 5rem;
+  }
 }

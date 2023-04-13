@@ -7,9 +7,12 @@ export default function QuestionAnswerItem({ item, img }) {
         <h1>{item[0].title}</h1>
         <p>{item[0].subtitle}</p>
       </div>
-      <div>
-        <img src={img} alt="invoice" />
-      </div>
+      {img ? (
+        <div>
+          <img src={img} alt="invoice" />
+        </div>
+      ) : null}
+
       <div>
         <h3>{item[1].question}</h3>
         <p>{item[1].answer}</p>

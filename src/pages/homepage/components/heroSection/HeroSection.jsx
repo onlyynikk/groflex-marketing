@@ -13,7 +13,10 @@ export default function HeroSection() {
           interface, and cloud-based convenience at your finger tips.
         </p>
         <div className="umlimited__primary-btn">
-          <BtnPrimary text={"Sign up for free"} />
+          <BtnPrimary
+            text={"Sign up for free"}
+            to={"https://app.groflex.in/"}
+          />
         </div>
       </div>
       <div className="unlimited__container--section2">
