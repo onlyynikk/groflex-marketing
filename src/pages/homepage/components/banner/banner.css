@@ -6,9 +6,14 @@
 .banner__title {
   margin: 0;
   padding: 0 10rem 0 0;
-  font-weight: 300;
-  font-size: 4rem;
-  letter-spacing: 1.5px;
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 140%;
+  /* or 84px */
+
+  letter-spacing: 1px;
 }
 
 .banner__text {
@@ -24,9 +29,14 @@
   }
   .banner__title {
     padding: 0 5rem 0 0;
-    font-weight: 300;
-    font-size: 3.5rem;
-    letter-spacing: 1.5px;
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 140%;
+    /* or 77px */
+
+    letter-spacing: 1px;
   }
 }
 
@@ -36,15 +46,18 @@
   }
   .banner__title {
     padding: 0 0 0 0;
+    font-family: var(--font);
+    font-style: normal;
     font-weight: 500;
-    font-size: 1.5rem;
-    letter-spacing: 1.5px;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 1px;
   }
   .banner__text {
     font-weight: 500;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    letter-spacing: 1.5px;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
   }
 }
 

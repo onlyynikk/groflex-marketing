@@ -21,6 +21,7 @@
 }
 
 .allfeatures__letters--list h3 {
+  font-family: var(--font);
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
@@ -29,6 +30,7 @@
   margin: 1rem 0;
 }
 .allfeatures__letters--list p {
+  font-family: var(--font);
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -45,40 +47,40 @@
   color: white;
 }
 
+.allfeatures__btn--wrapper {
+  width: 3rem;
+  border-radius: 6px;
+  position: fixed;
+  top: 10rem;
+  right: 3rem;
+  color: #0071ca;
+}
+
 .letter__btn--container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 3rem;
-  position: fixed;
-  right: 3rem;
-  top: 10rem;
   background: #edf7ff;
   box-shadow: 0px 4px 4px rgba(0, 113, 202, 0.25);
   border-radius: 8px;
 }
 .letter__btn--container a {
-  background: none;
-  border: none;
-  color: #0071ca;
+  text-decoration: none;
   font-size: 1.2rem;
   margin: 0.5rem 0;
   cursor: pointer;
-}
-.letter__btn--container button a {
-  text-decoration: none;
   color: #0071ca;
 }
+
 .btn__letters--change {
-  position: fixed;
-  position: fixed;
-  right: 3rem;
-  bottom: 6rem;
   background: #edf7ff;
   box-shadow: 0px 4px 4px rgba(0, 113, 202, 0.25);
   border-radius: 8px;
+  margin-top: 0.5rem;
 }
 
-.btn__letters--change button {
+.btn__letters--change > button {
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -102,5 +104,18 @@
   .allfeatures__letters--container {
     margin-right: 6rem;
     display: block;
+  }
+  .allfeatures__btn--wrapper {
+    display: none;
+  }
+
+  .allfeatures__letters--container {
+    margin-right: 0;
+  }
+  .allfeatures__letters--list h3 {
+    font-size: 1.2rem;
+  }
+  .allfeatures__letters--list p {
+    font-size: 0.9rem;
   }
 }

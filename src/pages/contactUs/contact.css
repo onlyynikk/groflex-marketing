@@ -12,7 +12,7 @@
 }
 
 .contact__section1 h1 {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -22,7 +22,7 @@
 }
 
 .contact__section1 p {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
@@ -50,13 +50,64 @@
   column-gap: 1rem;
 }
 
+.input-item-box {
+  position: relative;
+}
+.input-item-box span {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  padding: 10px;
+  pointer-events: none;
+  color: #747474;
+  font-size: 0.9rem;
+  transition: 0.5s;
+}
+
+.input-item-box input:valid ~ span,
+.input-item-box input:focus ~ span {
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  background: #e9f3f9;
+  border-radius: 5px;
+  color: green;
+}
+.input-item-box textarea:valid ~ span,
+.input-item-box textarea:focus ~ span {
+  transform: translateY(-20px);
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  background: #e9f3f9;
+  border-radius: 5px;
+  color: green;
+}
+
+.input__item:focus {
+  border: none;
+  outline: none;
+}
+.input__long:focus {
+  border: none;
+  outline: none;
+}
+.input__textarea:focus {
+  border: none;
+  outline: none;
+}
+
 .input__item {
   border: none;
   padding: 15px 19px;
   margin-bottom: 2rem;
   width: 20vw;
-  background: #e9f3f9;
+  background: #e0e8e4;
   border-radius: 4px;
+}
+
+.input__item:active,
+.input__item:focus {
+  background: #e9f3f9;
 }
 
 .error-msge {
@@ -70,21 +121,30 @@
   border: none;
   padding: 15px 18px;
   width: 42vw;
-  background: #e9f3f9;
+  background: #e0e8e4;
   border-radius: 4px;
   margin: 0 0 2rem 0;
+}
+.input__long:active,
+.input__long:focus {
+  background: #e9f3f9;
 }
 
 .input__textarea {
   border: none;
-  font-family: "mulish";
+  font-family: var(--font);
   font-size: 15px;
   width: 42vw;
   height: 100px;
   padding: 14px 19px;
   resize: none;
-  background: #e9f3f9;
+  background: #e0e8e4;
   border-radius: 4px;
+}
+
+.input__textarea:focus,
+.input__textarea:active {
+  background: #e9f3f9;
 }
 
 .submit__btn--container {
@@ -115,7 +175,7 @@
 }
 
 .contact__location p {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -174,7 +234,7 @@
 }
 
 .contact__box--item p {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -205,10 +265,20 @@
     padding: 5rem 2rem;
   }
   .contact__section1 {
-    padding: 5rem 0;
+    padding: 2rem 0 2rem 0;
+  }
+  .contact__section1 h1 {
+    font-size: 2rem;
+  }
+
+  .contact__section1 p {
+    font-size: 1rem;
   }
   .contact__section2 {
     padding: 1rem 2rem;
+  }
+  .contact__section2 p {
+    font-size: 0.9rem;
   }
   .input__items {
     grid-template-columns: repeat(1, 1fr);
@@ -234,6 +304,23 @@
   }
   .contact__location {
     padding: 4rem 2rem;
+  }
+
+  .contact__location p {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 1px;
+  }
+  .contact__box--items p {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 1px;
   }
 
   .thankyou__section {

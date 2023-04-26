@@ -19,7 +19,10 @@ export default function Navbar() {
     <>
       <OnClickOutside onClickOutside={() => setToggleMenu(false)}>
         <div className="navbar">
-          <div className="navbar__logo--container">
+          <div
+            className="navbar__logo--container"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <Link
               className="navbar-logo-img"
               to="/"
@@ -40,7 +43,7 @@ export default function Navbar() {
           <div className="navbar__hamburger--menu">
             {toggleMenu ? (
               <CgClose
-                color="green"
+                color="gray"
                 size={35}
                 onClick={() => setToggleMenu(false)}
               />

@@ -10,7 +10,11 @@ export default function Footer() {
   return (
     <div className="footer__wrapper--main">
       <div>
-        <Link to="/" className="name-logo">
+        <Link
+          to="/"
+          className="name-logo"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <img src={groflex1} alt="name logo" className="name-logo" />
         </Link>
       </div>

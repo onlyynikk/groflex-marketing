@@ -5,7 +5,7 @@
   cursor: pointer;
 }
 .question-text {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 200;
   font-size: 22px;
@@ -26,7 +26,7 @@
   transition: all 1s ease-in-out;
 }
 .answer_text {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .question-text {
-    font-family: "Mulish";
+    font-family: var(--font);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -47,7 +47,7 @@
     margin: 1rem 0;
   }
   .answer_text {
-    font-family: "Mulish";
+    font-family: var(--font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

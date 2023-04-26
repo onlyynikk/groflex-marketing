@@ -28,26 +28,28 @@ export default function AllfeaturesBody() {
 
   return (
     <div className="allfeatures__main--container">
-      {!showSet ? (
-        <div className="letter__btn--container">
-          {alphabets1.map((alphabet) => (
-            <a href={`#${alphabet}`} key={alphabet}>
-              {alphabet}
-            </a>
-          ))}
-        </div>
-      ) : (
-        <div className="letter__btn--container">
-          {alphabets2.map((alphabet) => (
-            <a href={`#${alphabet}`}> {alphabet}</a>
-          ))}
-        </div>
-      )}
+      <div className="allfeatures__btn--wrapper">
+        {!showSet ? (
+          <div className="letter__btn--container">
+            {alphabets1.map((alphabet) => (
+              <a href={`#${alphabet}`} key={alphabet}>
+                {alphabet}
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div className="letter__btn--container">
+            {alphabets2.map((alphabet) => (
+              <a href={`#${alphabet}`}> {alphabet}</a>
+            ))}
+          </div>
+        )}
 
-      <div className="btn__letters--change">
-        <button onClick={() => setShowSet(!showSet)}>
-          {showSet ? <SlArrowUp /> : <SlArrowDown />}
-        </button>
+        <div className="btn__letters--change">
+          <button onClick={() => setShowSet(!showSet)}>
+            {showSet ? <SlArrowUp /> : <SlArrowDown />}
+          </button>
+        </div>
       </div>
 
       <div className="allfeatures__letters" id="A">

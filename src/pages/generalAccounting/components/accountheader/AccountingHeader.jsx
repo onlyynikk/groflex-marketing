@@ -1,8 +1,9 @@
 import "./accountheader.css";
 import React from "react";
-import accountingframe from "../../../../assets/generalAcc/generalAcc-frame.png";
+// import accountingframe from "../../../../assets/generalAcc/generalAcc-frame.png";
+import avatar from "../../../../assets/generalAcc/generalAcc-avatar.png";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
-import FeaturesCTA from "../../../../helpers/featuresCTA/FeaturesCTA";
+
 import { AiOutlineCheck } from "react-icons/ai";
 
 export default function AccountingHeader() {
@@ -20,10 +21,10 @@ export default function AccountingHeader() {
           <BtnPrimary text={"sign up for free"} />
         </div>
         <div className="account__header--img">
-          <img src={accountingframe} alt="frame" />
+          <img src={avatar} alt="frame" />
         </div>
       </div>
-      <FeaturesCTA />
+
       <div className="accounting__header--list">
         <h1>Enhanced data management and tracking</h1>
         <div className="accounting__header--list-items">

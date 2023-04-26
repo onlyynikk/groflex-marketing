@@ -1,0 +1,134 @@
+.foodbeverageheader__container {
+  padding: 10rem 6rem 4rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.35) 0%,
+    rgba(0, 140, 139, 0.175) 35.42%,
+    rgba(0, 113, 202, 0.105) 65.62%,
+    rgba(0, 163, 83, 0) 100%
+  );
+}
+
+.foodbeverageheader__section1 {
+  display: grid;
+  grid-template-columns: 2fr 2.1fr;
+}
+
+.foodbeverageheader__content h1 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+  /* or 77px */
+}
+.foodbeverageheader__content p {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  padding-bottom: 2rem;
+}
+
+.foodbeverageheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.foodbeverageheader__section2 {
+  padding: 8rem 0 4rem 0;
+}
+
+.foodbeverageheader__section2 h1 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: #272d30;
+}
+
+.foodbeverageheader__section2 p {
+  padding-left: 0.5rem;
+}
+
+.foodbeverageheader__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.foodbeverageheader__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90.63deg,
+    rgba(0, 113, 202, 0.16) 13.58%,
+    rgba(0, 163, 83, 0.16) 71.5%
+  );
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 1720px) {
+  .foodbeverageheader__container {
+    padding: 10rem 20rem 4rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .foodbeverageheader__container {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+  .foodbeverageheader__section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foodbeverageheader__content {
+    padding-bottom: 4rem;
+  }
+  .foodbeverageheader__items {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .foodbeverageheader__container {
+    padding: 5rem 2rem 4rem 2rem;
+  }
+  .foodbeverageheader__content {
+    padding-bottom: 4rem;
+  }
+  .foodbeverageheader__section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foodbeverageheader__content h1,
+  .foodbeverageheader__section2 h1 {
+    font-size: 1.625rem;
+  }
+  .foodbeverageheader__content p,
+  .foodbeverageheader__section2 p {
+    font-size: 1rem;
+  }
+  .foodbeverageheader__items {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    padding-top: 2rem;
+  }
+  .foodbeverageheader__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1rem;
+  }
+  .foodbeverageheader__section2 {
+    padding: 4rem 0;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import quotations from "../../../../assets/quotations.gif";
+import quotations from "../../../../assets/homepage/quotation.png";
 
 export default function Quatations() {
   return (

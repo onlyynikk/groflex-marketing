@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 12rem 15rem 12rem;
+  padding: 6rem 12rem;
 }
 
 .cashnbank__title h1 {
   padding: 0rem 8rem 2rem 8rem;
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -17,7 +17,7 @@
 }
 .cashnbank__title p {
   padding: 0 8rem;
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
@@ -42,7 +42,7 @@
 }
 
 .cashnbank__section2 {
-  padding: 8rem 12rem 6rem 12rem;
+  padding: 6rem 12rem;
   background: linear-gradient(
     180deg,
     rgba(0, 113, 202, 0) -3.56%,
@@ -54,7 +54,7 @@
 }
 
 .cashnbank__section3 {
-  padding: 10rem 12rem 15rem 12rem;
+  padding: 6rem 12rem;
 }
 
 @media screen and (min-width: 1720px) {
@@ -98,11 +98,13 @@
     padding: 0;
     font-size: 25px;
     margin-bottom: 2rem;
+    font-size: 1.25rem;
   }
   .cashnbank__title p {
     padding: 0;
+    font-size: 0.9rem;
 
-    font-size: 16px;
+    text-align: justify;
   }
   .question__list {
     margin: 0;

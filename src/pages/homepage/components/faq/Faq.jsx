@@ -21,9 +21,9 @@ export default function Faq({ id, active, setActive, question, answer }) {
           <div className="container" onClick={handleActive}>
             <h3>{question}</h3>
             {active === id ? (
-              <SlArrowUp size={25} />
+              <SlArrowUp className="arrow-size" />
             ) : (
-              <SlArrowDown size={25} />
+              <SlArrowDown className="arrow-size" />
             )}
           </div>
         </div>

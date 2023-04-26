@@ -1,0 +1,130 @@
+.healthheader__container {
+  padding: 10rem 6rem 4rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.35) 0%,
+    rgba(0, 140, 139, 0.175) 35.42%,
+    rgba(0, 113, 202, 0.105) 65.62%,
+    rgba(0, 163, 83, 0) 100%
+  );
+}
+
+.healthheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.healthheader__section1 {
+  display: flex;
+}
+
+.healthheader__content {
+  padding: 0 0 4rem 4rem;
+}
+
+.healthheader__content h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+.healthheader__content p,
+.healtheader__item p {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+}
+
+.healthheader__section2 {
+  padding: 4rem 6rem;
+}
+
+.healthheader__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+.healtheader__item {
+  padding: 0 1rem;
+  background: linear-gradient(
+    90.63deg,
+    rgba(0, 113, 202, 0.16) 13.58%,
+    rgba(0, 163, 83, 0.16) 71.5%
+  );
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.healtheader__item img {
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width: 1720px) {
+  .healthheader__section1 {
+    padding: 10rem 20rem 5rem 0;
+  }
+  .healthheader__section2 {
+    padding: 4rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .healthheader__section1 {
+    display: flex;
+    padding: 0 6rem 0 0;
+    flex-direction: column;
+  }
+
+  .healthheader__content {
+    padding: 0rem 6rem 4rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .healthheader__container {
+    padding: 4rem 2rem;
+  }
+  .healthheader__content {
+    padding: 0 0 4rem 0;
+  }
+  .healthheader__section1 {
+    display: flex;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .healthheader__content h1,
+  .healthheader__section2 h1 {
+    font-size: 1.625rem;
+  }
+  .healthheader__section1 {
+    display: flex;
+    padding: 0;
+  }
+
+  .healthheader__content p,
+  .healtheader__item p {
+    font-size: 1rem;
+  }
+
+  .healthheader__img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .healthheader__img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .healthheader__section2 {
+    padding: 5rem 0 3rem 0;
+  }
+  .healthheader__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}

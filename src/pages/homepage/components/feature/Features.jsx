@@ -103,8 +103,9 @@ export default function Features() {
             Quotations
           </h2>
           <p className="features__text">
-            Send quotations to clients instantly. Gone are the days of stress
-            over heavy paperwork.
+            See the inflow, outflow, sources and <br />
+            use of cash over a specific period
+            <br /> of time.
           </p>
           <Link
             to="/features/invoice-and-quotation"
@@ -123,8 +124,8 @@ export default function Features() {
             Invoices
           </h2>
           <p className="features__text">
-            Generate GST-compliant invoices and convert estimates with ease
-            using our custom invoice tool.
+            Get multi-currency features, which can help you transact with
+            customers from different countries.
           </p>
           <Link
             to="/features/invoice-and-quotation"

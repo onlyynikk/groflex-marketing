@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import invoice from "../../../../assets/invoice.gif";
+import invoice from "../../../../assets/homepage/invoice.png";
 
 export default function Invoices() {
   return (

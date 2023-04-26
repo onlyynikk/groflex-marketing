@@ -1,8 +1,8 @@
 import React from "react";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
 import "./reportsheader.css";
-import frame from "../../../../assets/reports/reports-hero.png";
-import FeaturesCta from "../../../../helpers/featuresCTA/FeaturesCTA";
+// import frame from "../../../../assets/reports/reports-hero.png";
+import avatar from "../../../../assets/reports/reports-avatar.png";
 import { FcCheckmark } from "react-icons/fc";
 
 export default function ReportsHeader() {
@@ -22,10 +22,9 @@ export default function ReportsHeader() {
           />
         </div>
         <div className="reports__header--img">
-          <img src={frame} alt="gif" />
+          <img src={avatar} alt="gif" />
         </div>
       </div>
-      <FeaturesCta />
       <div className="reports__header--list">
         <h1>Simplifying financial reporting for businesses</h1>
         <div className="reports__list--items">

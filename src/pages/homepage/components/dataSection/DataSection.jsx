@@ -23,6 +23,7 @@ export default function DataSection() {
               alt="encription"
               className="data--section--icon cloud-icon"
             />
+            <h4>256 BIT SSL ENCRYPTION</h4>
 
             <p className="data__section-para">
               We optimize encryption for sensitive data in our database and{" "}
@@ -40,6 +41,7 @@ export default function DataSection() {
               alt="cloudencript"
               className="data--section--icon "
             />
+            <h4>SOFTWARE AS A SERVICE</h4>
             <p className="data__section-para">
               At grofleX, we use advanced AES256 encryption technology for our
               cloudbased software and{" "}
@@ -57,6 +59,7 @@ export default function DataSection() {
               alt="sheild"
               className="data--section--icon cloud-icon"
             />
+            <h4>SECURITY & DATA PROTECTIONS</h4>
             <p className="data__section-para">
               <span className="secondary-highlight">
                 We store your grofleX data in secure,

@@ -3,7 +3,7 @@
 }
 
 .termsandcondition__title {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -22,7 +22,7 @@
 }
 
 .termsandcondition__subtitle {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 1.875rem;
@@ -39,7 +39,7 @@
 }
 
 .termsandcondition__wrapper--ul li {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.375rem;
@@ -86,7 +86,7 @@
     padding: 6rem 2rem 1.5rem 2rem;
   }
   .termsandcondition__title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .termsandcondition__subtitle {

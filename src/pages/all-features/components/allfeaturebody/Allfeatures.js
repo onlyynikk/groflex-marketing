@@ -47,6 +47,12 @@ export const letterA = [
     subtitle:
       "Create professional quotations and send them directly to the client via email, or you can download them as a PDF. You can also send a quotation link to the client to view in an online browser which they can accept immediately",
   },
+  {
+    id: 9,
+    title: "Automated invoice reminders ",
+    subtitle:
+      "This feature automatically assigns numbers to invoices whenever generated. The number range can be set as per a financial or calendar year.",
+  },
 ];
 
 export const letterB = [
@@ -191,6 +197,12 @@ export const letterI = [
     subtitle:
       "Imprezz allows you to create invoices swiftly. All you have to do is insert your logo, and the necessary details and the tool will generate the invoice automatically",
   },
+  {
+    id: 5,
+    title: "Instant payment records ",
+    subtitle:
+      "This feature gives a clear picture of all payments made. Based on the payment, it is easy to figure out if the amount paid is partial or a part of the discount offered by you or a bank fee in a simplified way.",
+  },
 ];
 
 export const letterL = [
@@ -239,6 +251,12 @@ export const letterP = [
     subtitle:
       "Use mobile billing system for frictionless experience from adding customers to articles in the inventory. With the feature to generate sales receipts automatically, record discounts, display sales stats, you can easily estimate revenue for a specific period",
   },
+  {
+    id: 4,
+    title: "Professional quotations  ",
+    subtitle:
+      "This feature helps in creating professional quotations quickly by adding customer, article details and payment terms in a few clicks. Once created, the quotations can be directly sent to the email ids of the customers in pdf format or as a URL.",
+  },
 ];
 
 export const letterQ = [
@@ -247,6 +265,12 @@ export const letterQ = [
     title: "Quotations",
     subtitle:
       "Create error-free quotations with the help of software- select customers, add articles, and you are all set. Send a link for a quotation by downloading it as a pdf, mail it directly, or get it printed",
+  },
+  {
+    id: 2,
+    title: "Quotation templates ",
+    subtitle:
+      "This feature enables the use of professional quotation templates to create a confident brand image for the business and assist in the fast closure of business deals.",
   },
 ];
 export const letterR = [
@@ -281,6 +305,12 @@ export const letterS = [
     title: "Support",
     subtitle:
       "The customer support team is readily available to walk you through all features and guide you whenever you feel stuck",
+  },
+  {
+    id: 4,
+    title: "Smart payment reminders ",
+    subtitle:
+      "This feature allows for the collection of dues faster and more conveniently with grofleX’s automated payment reminders. It also enables to set timelines, interest rates and specify payment terms.",
   },
 ];
 export const letterT = [

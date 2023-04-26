@@ -13,6 +13,11 @@ import GeneralAccounting from "./pages/generalAccounting/GeneralAccounting";
 import Reports from "./pages/reports-page/Reports";
 import AllFeatures from "./pages/all-features/AllFeatures";
 import ContactSuccess from "./pages/contact-success/ContactSuccess";
+import AboutUs from "./pages/aboutUs/AboutUs";
+import Manufacture from "./pages/solutions/manufacture/Manufacture";
+import Retail from "./pages/solutions/retail/Retail";
+import FoodBeverage from "./pages/solutions/food&beverage/FoodBeverage";
+import HealthWellness from "./pages/solutions/health&wellness/HealthWellness";
 
 function App() {
   const queryParameters = new URLSearchParams(
@@ -46,6 +51,10 @@ function App() {
         <Route path="/contact-success" element={<ContactSuccess />} />
         <Route path="/terms-&-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/about-us" element={<AboutUs />} />
+
+        {/* <-----Features Pages-----> */}
+
         <Route
           path="/features/invoice-and-quotation"
           element={<InvoiceAndQuotation />}
@@ -60,6 +69,14 @@ function App() {
         />
         <Route path="/features/reports-page" element={<Reports />} />
         <Route path="/features/all-features" element={<AllFeatures />} />
+
+        {/* <-----Solutions pages-----> */}
+
+        <Route path="/solutions/manufacture" element={<Manufacture />} />
+        <Route path="/solutions/retail" element={<Retail />} />
+        <Route path="/solutions/food&beverage" element={<FoodBeverage />} />
+        <Route path="/solutions/health&wellness" element={<HealthWellness />} />
+
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 

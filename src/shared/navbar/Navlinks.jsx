@@ -8,10 +8,19 @@ export default function Navlinks() {
   const [featuresArrow, setfeaturesArrow] = useState(false);
   const [resourcesArrow, setresourcesArrow] = useState(false);
   const [accountingArrow, setAccountingArrow] = useState(false);
-  console.log(accountingArrow);
+
+  function handleLevel3LinksClick() {
+    setAccountingArrow(!accountingArrow);
+    setfeaturesArrow(false);
+  }
+
   return (
     <div className="navbar__links--wrapper">
-      <Link className="navbar__link space-right" to="/">
+      <Link
+        className="navbar__link space-right"
+        to="/"
+        onClick={() => window.scrollTo(0, 0)}
+      >
         Home
       </Link>
       <div className="dropdown__container">
@@ -29,7 +38,7 @@ export default function Navlinks() {
           </Link>
           {featuresArrow && (
             <div
-              className="dropdown__menu-accounting"
+              className="dropdown__menu"
               onMouseLeave={() => setfeaturesArrow(false)}
             >
               <div
@@ -37,7 +46,12 @@ export default function Navlinks() {
                 onMouseLeave={() => setAccountingArrow(false)}
               >
                 <Link
-                  className="navbar__link--level2"
+                  className={
+                    accountingArrow
+                      ? "navbar__link--level2-active"
+                      : "navbar__link--level2"
+                  }
+                  // className="navbar__link--level2"
                   onClick={() => setAccountingArrow(!accountingArrow)}
                 >
                   Accounting
@@ -49,30 +63,34 @@ export default function Navlinks() {
                     <Link
                       to="/features/invoice-and-quotation"
                       className="navbar__link--level3"
+                      onClick={handleLevel3LinksClick}
                     >
                       Quotations and Invoices
                     </Link>
                     <Link
                       className="navbar__link--level3"
                       to="/features/cash&bank-and-reconcilliation"
+                      onClick={handleLevel3LinksClick}
                     >
                       Cash and Bank
                     </Link>
                     <Link
                       className="navbar__link--level3"
                       to="/features/general-accounting"
+                      onClick={handleLevel3LinksClick}
                     >
                       General Accounting
                     </Link>
                     <Link
                       className="navbar__link--level3"
                       to="/features/reports-page"
+                      onClick={handleLevel3LinksClick}
                     >
                       Financial Reports
                     </Link>
                   </div>
                 ) : (
-                  <p>
+                  <p className="navbar__acc--info">
                     Streamline your accounting, save time, and make informed
                     decisions to boost your business growth.
                   </p>
@@ -97,11 +115,17 @@ export default function Navlinks() {
           </Link>
           {resourcesArrow && (
             <div
-              className="dropdown__menu-resources"
+              className="dropdown__menu2"
               onMouseLeave={() => setresourcesArrow(false)}
             >
               <Link
-                className="dropdown__menu--link"
+                className="navbar__link--level3"
+                to="/features/all-features"
+              >
+                All Features
+              </Link>
+              <Link
+                className="navbar__link--level3"
                 to="https://blog.groflex.in"
               >
                 Blogs

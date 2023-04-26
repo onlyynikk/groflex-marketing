@@ -1,9 +1,8 @@
 import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
-import quotationsimg from "../../../../assets/i&q.png";
+import mainAvatar from "../../../../assets/i&q/main.png";
 import "../../components/invoiceheader/invoiceheader.css";
-import FeaturesCta from "../../../../helpers/featuresCTA/FeaturesCTA";
 
 export default function InvoiceHeader() {
   return (
@@ -25,11 +24,8 @@ export default function InvoiceHeader() {
           />
         </div>
         <div className="invoice__header--section-gif">
-          <img src={quotationsimg} alt="quotations gif" />
+          <img src={mainAvatar} alt="quotations gif" />
         </div>
-      </div>
-      <div className="invoice__header--featureCTA--wrapper">
-        <FeaturesCta />
       </div>
       <div className="invoice__header--section2">
         <div className="invoice__header--section2--title">

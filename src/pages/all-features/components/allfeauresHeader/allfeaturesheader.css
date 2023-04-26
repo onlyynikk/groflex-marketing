@@ -9,6 +9,7 @@
   );
 }
 .allfeatures__header--container h1 {
+  font-family: var(--font);
   font-weight: 700;
   font-size: 55px;
   line-height: 140%;
@@ -16,6 +17,7 @@
 }
 
 .allfeatures__header--container p {
+  font-family: var(--font);
   font-weight: 500;
   font-size: 18px;
   line-height: 155%;

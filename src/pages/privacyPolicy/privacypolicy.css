@@ -11,7 +11,7 @@
 }
 
 .privacy__para {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.375rem;
@@ -27,7 +27,7 @@
 }
 
 .privacy__section--title {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 2.625rem;
@@ -45,7 +45,7 @@
 }
 
 .privacy__subtitle {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 1.875rem;
@@ -61,7 +61,7 @@
 }
 
 .privacy__wrapper--ul li {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.375rem;

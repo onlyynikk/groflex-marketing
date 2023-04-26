@@ -1,0 +1,106 @@
+.manufacturebody__container {
+  padding: 2rem 6rem;
+}
+
+.manufacturebody__item--img img {
+  width: 100%;
+  height: auto;
+}
+.manufacturebody__item--img {
+  border: 0.269424px solid #3a3a3a;
+  box-shadow: 0.89808px 2.69424px 8.9808px 7.18464px rgba(0, 0, 0, 0.1),
+    2.69424px 4.4904px 53.8848px 8.9808px rgba(0, 113, 202, 0.25);
+  border-radius: 6.28656px;
+}
+
+.manufacturebody__items {
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+}
+
+.manufacturebody__items--odd {
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.manufacturebody__item--content {
+  padding: 0 5rem 0 0;
+}
+.manufacturebody__item--content--odd {
+  padding: 0 0 0 5rem;
+}
+
+.manufacturebody__item--content h1 {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.manufacturebody__item--content p {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+}
+
+@media screen and (min-width: 1720px) {
+  .manufacturebody__container {
+    padding: 3rem 20rem;
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 360px) {
+  .manufacturebody__items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  .manufacturebody__items--odd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .manufacturebody__item--content {
+    padding: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .manufacturebody__item--content--odd {
+    padding: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 360px) {
+  .manufacturebody__container {
+    padding: 2rem;
+  }
+  .manufacturebody__items {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  .manufacturebody__item--content h1 {
+    font-size: 1.625rem;
+  }
+
+  .manufacturebody__item--content p {
+    font-size: 1rem;
+  }
+}

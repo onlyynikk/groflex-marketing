@@ -14,12 +14,16 @@ import phonegrp3 from "../../../../../assets/phonegrp3.png";
 import phonegrp4 from "../../../../../assets/phonegrp4.png";
 import phonegrp5 from "../../../../../assets/phonegrp5.png";
 import phonegrp6 from "../../../../../assets/phonegrp6.png";
+import FeaturesCta from "../../../../../helpers/featuresCTA/FeaturesCTA";
+import money from "../../../../../assets/money.svg";
+import pad from "../../../../../assets/pad.svg";
+import paper from "../../../../../assets/paper.svg";
 
 import Banner from "../../../../homepage/components/banner/Banner";
 
 export default function QuotaionFeatures() {
   return (
-    <div>
+    <div className="quotation__body--container">
       <div className="features__page--desktop">
         <div className="features__section--item-box1">
           <div className="features__section--gif-odd">
@@ -79,6 +83,18 @@ export default function QuotaionFeatures() {
           </div>
         </div>
       </div>
+
+      <FeaturesCta
+        img1={money}
+        img2={pad}
+        img3={paper}
+        title1={"Cash And Bank"}
+        title2={"General Accounting"}
+        title3={"Financial Reports"}
+        link1={"/features/cash&bank-and-reconcilliation"}
+        link2={"/features/general-accounting"}
+        link3={"/features/reports-page"}
+      />
     </div>
   );
 }

@@ -142,59 +142,61 @@ export default function ContactUs({
           <div>
             <form onSubmit={handleSubmit}>
               <div className="input__items">
-                <div>
+                <div className="input-item-box">
                   <input
                     className="input__item"
-                    placeholder="Name"
                     type="text"
                     name="userName"
                     value={userName}
                     onChange={(e) => setUserName(e.target.value)}
                     required
                   />
+                  <span>Your Name</span>
                 </div>
-                <div>
+                <div className="input-item-box">
                   <input
                     className="input__item"
-                    placeholder="Contact Number"
                     type="number"
                     name="contact"
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}
                     required
                   />
+                  <span>Contact Number</span>
                 </div>
               </div>
               <div className="input__items--section2">
-                <input
-                  type="email"
-                  placeholder="Email ID"
-                  className="input__long"
-                  required
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <span className="error-msge">error</span>
+                <div className="input-item-box">
+                  <input
+                    type="email"
+                    className="input__long"
+                    required
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <span>Email Id</span>
+                </div>
               </div>
-              <div>
+              <div className="input-item-box">
                 <input
                   type="text"
-                  placeholder="Company Name"
                   className="input__long"
                   required
                   name="company-name"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                 />
+                <span>Company Name</span>
               </div>
-              <div>
+              <div className="input-item-box">
                 <textarea
-                  placeholder="Message"
+                  required
                   value={message}
                   className="input__textarea"
                   onChange={(e) => setMessage(e.target.value)}
                 />
+                <span>Message</span>
               </div>
               <div className="submit__btn--container">
                 <button className="contact__btn" type="submit">

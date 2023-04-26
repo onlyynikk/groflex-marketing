@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./faqsection.css";
 import Faq from "./Faq";
-import OnClickOutside from "../../../../shared/onClickOutside/OnClickOutside";
 
 const dataCollection = [
   {

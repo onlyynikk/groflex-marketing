@@ -13,6 +13,7 @@
 }
 
 .accounting__even--header .accounting__odd--header h1 {
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -22,6 +23,7 @@
 }
 
 .accounting__even--header .accounting__odd--header p {
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -74,10 +76,9 @@
     padding: 0 1rem;
   }
   .accounting__mobile--header h1 {
-    font-size: 25px;
+    font-size: 1.3rem;
   }
   .mobile__wrapper {
     padding: 4rem 2rem;
-    margin-bottom: 4rem;
   }
 }

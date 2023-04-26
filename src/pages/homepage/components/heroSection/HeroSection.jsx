@@ -1,7 +1,7 @@
 import React from "react";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
 import "./herosection.css";
-import hero from "../../../../assets/hero-section.gif";
+import hero from "../../../../assets/homepage/mockup frame.png";
 
 export default function HeroSection() {
   return (

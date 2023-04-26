@@ -1,14 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap");
+@font-face {
+  font-family: "Satoshi-Variable";
+  src: url("./assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+    url("./assets/fonts/Satoshi-Variable.woff") format("woff"),
+    url("./assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: "Satoshi-Variable";
+
   margin: 0 auto;
   max-width: 3500px;
+  color: #272d30;
 }
 
 html {
   scroll-behavior: "smooth";
+}
+
+:root {
+  --font: "Satoshi-Variable";
+  --h1: 5rem;
+  --h1weight: 700;
+  --pweight: 500;
+  --p: 24px;
 }

@@ -4,7 +4,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import BtnPrimary from "../../../shared/btnGreen/BtnPrimary";
 // import quotation from "../../../assets/cash&bank/cashnbank-quotation.png";
 import cash from "../../../assets/cash&bank/cash&bank hero.png";
-import FeaturesCta from "../../../helpers/featuresCTA/FeaturesCTA";
+import avatar from "../../../assets/cash&bank/cashnbankAvatar.png";
 
 export default function CashnBankHeader() {
   return (
@@ -21,11 +21,8 @@ export default function CashnBankHeader() {
           <BtnPrimary text={"Sign up for free"} />
         </div>
         <div className="cashnbank__header-img">
-          <img src={cash} alt="header img" />
+          <img src={avatar} alt="header img" />
         </div>
-      </div>
-      <div className="cashnbank__featureCTA--container">
-        <FeaturesCta />
       </div>
 
       <div className="cashnbank__header--section-2">

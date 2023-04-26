@@ -15,7 +15,7 @@
   justify-content: flex-start;
 
   margin: 0 2rem 2rem 0;
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
@@ -28,7 +28,7 @@
 }
 
 .invoice__header--title h1 {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 700;
   font-size: 3.485rem;
@@ -39,16 +39,10 @@
 .invoice__header--section-gif img {
   width: 100%;
   height: auto;
-  border-radius: 2.39947px;
-}
-.invoice__header--section-gif {
-  box-shadow: 3px 5px 80px 13px rgba(0, 113, 202, 0.3);
-  filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.25));
-  border-radius: 2.39947px;
 }
 
 .invoice__header--section2--title h1 {
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 900;
   font-size: 2.625rem;
@@ -67,7 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-family: "Mulish";
+  font-family: var(--font);
   font-style: normal;
   font-weight: 500;
   font-size: 1.375rem;
@@ -106,27 +100,32 @@
 
   .invoice__header__section1 {
     flex-direction: column;
+    margin-bottom: 6rem;
   }
   .invoice__header--title h1 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
     margin: 4rem 0 2rem 0;
+    margin: 3rem 0 2rem 0;
   }
   .invoice__header__section1 p {
-    font-size: 1.125rem;
+    font-size: 15px;
     margin: 0 0rem 2rem 0;
+    line-height: 1.2;
   }
   .invoice__header--gif {
     margin: 3rem 4rem;
   }
 
   .invoice__header--section2--title h1 {
-    font-size: 1.875rem;
+    font-size: 1.35rem;
+    margin-bottom: 2rem;
   }
   .invoice__header--section2--items {
     grid-template-columns: repeat(1, 1fr);
   }
   .invoice__header--section2--items p {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .terms__wrapper--ul li {
