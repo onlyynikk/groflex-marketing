@@ -1,5 +1,5 @@
 .faq__container {
-  padding: 3rem 6.25rem 3rem 6.25rem;
+  padding: 3rem 6.25rem 6rem 6.25rem;
   margin-bottom: 5rem;
 }
 
@@ -95,8 +95,8 @@
   }
 }
 
-/* @media screen and (min-width: 1720px) {
+@media screen and (min-width: 1720px) {
   .faq__container {
     padding: 3rem 20rem 3rem 20rem;
   }
-} */
+}

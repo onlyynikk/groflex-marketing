@@ -1,0 +1,131 @@
+.cfoheader__container {
+  padding: 10rem 6rem 4rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.3) 0%,
+    rgba(0, 140, 139, 0.15) 34.38%,
+    rgba(0, 113, 202, 0.09) 69.27%,
+    rgba(0, 163, 83, 0) 100%
+  );
+}
+
+.cfoheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.cfoheader__section1 {
+  padding: 0 0 4rem 0;
+  display: flex;
+}
+
+.cfoheader__content {
+  padding: 0 4rem;
+}
+.cfoheader__content h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+}
+.cfoheader__content p {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+}
+
+.cfoheader__section2 h2 {
+  padding: 4rem 0 0 0;
+  font-family: var(--font);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.cfoheader__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.cfoheader__item img {
+  padding-right: 1rem;
+}
+
+.cfoheader__item {
+  display: flex;
+  padding: 0 1rem;
+  background: linear-gradient(
+    90.63deg,
+    rgba(0, 113, 202, 0.16) 13.58%,
+    rgba(0, 163, 83, 0.16) 71.5%
+  );
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 1720px) {
+  .cfoheader__container {
+    padding: 10rem 20rem 4rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 568px) {
+  .cfoheader__img img {
+    width: 315.99px;
+    height: 294.87px;
+  }
+  .cfoheader__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .cfoheader__section1 {
+    padding: 0 0 4rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cfoheader__content {
+    padding: 0 0 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 360px) {
+  .cfoheader__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+  .cfoheader__section2 h2 {
+    font-size: 1.35rem;
+  }
+  .cfoheader__content p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 360px) {
+  .cfoheader__container {
+    padding: 5rem 2rem 4rem 2rem;
+  }
+  .cfoheader__section1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cfoheader__content {
+    padding: 0 0 4rem 0;
+  }
+  .cfoheader__content h1 {
+    font-size: 1.625rem;
+  }
+  .cfoheader__content p {
+    font-size: 1rem;
+  }
+  .cfoheader__section2 h2 {
+    padding: 0;
+    font-size: 1.35rem;
+  }
+}

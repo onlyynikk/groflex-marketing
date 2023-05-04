@@ -26,10 +26,7 @@ export default function Features() {
             Organize your finances, enable editing of sub-accounts, manage
             transactions, filter, sort and add new transactions with ease.
           </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
+          <Link to="/features/reports-page" className="features__seemore">
             See more
           </Link>
         </div>
@@ -46,10 +43,7 @@ export default function Features() {
             Easily edit bank and cash account details, view cash flow chart, and
             customize time periods for financial analysis.
           </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
+          <Link to="/features/general-accounting" className="features__seemore">
             See more
           </Link>
         </div>
@@ -66,10 +60,7 @@ export default function Features() {
             Efficient transaction reconciliation by selecting matching
             transactions, editing, and adding missing ones.
           </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
+          <Link to="/features/all-features" className="features__seemore">
             See more
           </Link>
         </div>
@@ -86,10 +77,7 @@ export default function Features() {
             An all-in-one accounting solution with ledger creation, bulk
             payments, document management and credit and debit notes.
           </p>
-          <Link
-            to="/features/invoice-and-quotation"
-            className="features__seemore"
-          >
+          <Link to="/features/general-accounting" className="features__seemore">
             See more
           </Link>
         </div>

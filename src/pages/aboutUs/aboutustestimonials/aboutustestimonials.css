@@ -19,6 +19,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 155%;
+  padding: 0 6rem;
 }
 
 .aboutus__team--img img {
@@ -30,7 +31,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 3rem 6rem;
+  padding: 6rem 6rem 3rem 6rem;
   margin-bottom: 3rem;
 }
 .aboutus__testimonial--items h3 {
@@ -52,7 +53,7 @@
 
 .aboutus__testimonial--img2 {
   position: absolute;
-  top: 27rem;
+  top: 30rem;
   right: 8rem;
 }
 
@@ -79,8 +80,8 @@
   }
   .aboutus__testimonial--img2 {
     position: absolute;
-    top: 22rem;
-    right: 25rem;
+    top: 27rem;
+    right: 8rem;
   }
 }
 
@@ -108,6 +109,7 @@
   .aboutus__team--content {
     padding: 2rem;
   }
+
   .aboutus__testimonial--img1 img {
     width: 270px;
     padding: 1.5rem 0;
@@ -131,6 +133,9 @@
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .aboutus__team--container h1 {
     font-size: 1.625rem;
+  }
+  .aboutus__team--content p {
+    padding: 0;
   }
   .aboutus__testimonial--img2 {
     position: static;
@@ -157,5 +162,9 @@
   }
   .aboutus__testimonial--img2 {
     position: static;
+  }
+  .aboutus__team--content p {
+    padding: 0;
+    font-size: 1rem;
   }
 }

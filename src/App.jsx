@@ -18,6 +18,12 @@ import Manufacture from "./pages/solutions/manufacture/Manufacture";
 import Retail from "./pages/solutions/retail/Retail";
 import FoodBeverage from "./pages/solutions/food&beverage/FoodBeverage";
 import HealthWellness from "./pages/solutions/health&wellness/HealthWellness";
+import Ecommerce from "./pages/solutions/Ecommerce/Ecommerce";
+import Hospitality from "./pages/solutions/hospitality/Hospitality";
+import Cfo from "./pages/solutions/cfo/Cfo";
+import SmallMediumBusiness from "./pages/solutions/small-medium-business/SmallMediumBusiness";
+import Accountants from "./pages/solutions/accountants/Accountants";
+import BusinessOwners from "./pages/solutions/small-business-owners/BusinessOwners";
 
 function App() {
   const queryParameters = new URLSearchParams(
@@ -76,6 +82,18 @@ function App() {
         <Route path="/solutions/retail" element={<Retail />} />
         <Route path="/solutions/food&beverage" element={<FoodBeverage />} />
         <Route path="/solutions/health&wellness" element={<HealthWellness />} />
+        <Route path="/solutions/E-commerce" element={<Ecommerce />} />
+        <Route path="/solutions/hospitality" element={<Hospitality />} />
+        <Route path="/solutions/CFO" element={<Cfo />} />
+        <Route
+          path="/solutions/small-and-medium-business"
+          element={<SmallMediumBusiness />}
+        />
+        <Route path="/solutions/accountants" element={<Accountants />} />
+        <Route
+          path="/solutions/small-business-owners"
+          element={<BusinessOwners />}
+        />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

@@ -137,16 +137,9 @@
     height: 824px;
   }
 }
-/* 
+
 @media screen and (min-width: 1720px) {
   .unlimited__container {
     padding: 15rem 20rem 0rem 20rem;
   }
-  .unlimited__container--section1 h1 {
-    font-family: var(--font);    font-style: normal;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 140%;
-    padding-right: 3rem;
-  }
-} */
+}

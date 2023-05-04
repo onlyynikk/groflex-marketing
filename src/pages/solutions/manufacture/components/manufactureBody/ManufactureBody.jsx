@@ -3,11 +3,14 @@ import "./manufacturebody.css";
 import group1 from "../../../../../assets/solutions/manufacture/group1.png";
 import group2 from "../../../../../assets/solutions/manufacture/group2.png";
 import group3 from "../../../../../assets/solutions/manufacture/group3.png";
+import grp1 from "../../../../../assets/solutions/manufacture/grp1.png";
+import grp2 from "../../../../../assets/solutions/manufacture/grp2.png";
+import grp3 from "../../../../../assets/solutions/manufacture/grp3.png";
 
 export default function ManufactureBody() {
   return (
     <div className="manufacturebody__container">
-      <div className="manufacturebody__items">
+      <div className="manufacturebody__item--even">
         <div className="manufacturebody__item--content">
           <h1>Accurate transaction reconciliation</h1>
           <p>
@@ -17,12 +20,15 @@ export default function ManufactureBody() {
             transparency.
           </p>
         </div>
-        <div className="manufacturebody__item--img">
+        <div className="manufacturebody__item--img--phone">
           <img src={group1} alt="frame3" />
+        </div>
+        <div className="manufacturebody__item--img--desktop">
+          <img src={grp1} alt="frame3" />
         </div>
       </div>
       <div className="manufacturebody__items--odd">
-        <div className="manufacturebody__item--content--odd">
+        <div className="manufacturebody__item--content">
           <h1>Improved financial analysis</h1>
           <p>
             The comprehensive cash flow chart can provide manufacturers with a
@@ -32,11 +38,14 @@ export default function ManufactureBody() {
             long-time success.
           </p>
         </div>
-        <div className="manufacturebody__item--img">
+        <div className="manufacturebody__item--img--phone">
           <img src={group2} alt="frame3" />
         </div>
+        <div className="manufacturebody__item--img--desktop">
+          <img src={grp2} alt="frame3" />
+        </div>
       </div>
-      <div className="manufacturebody__items">
+      <div className="manufacturebody__item--even">
         <div className="manufacturebody__item--content">
           <h1>Efficient cash and bank account management</h1>
           <p>
@@ -46,8 +55,11 @@ export default function ManufactureBody() {
             grofleX to make data driven decisions.
           </p>
         </div>
-        <div className="manufacturebody__item--img">
+        <div className="manufacturebody__item--img--phone">
           <img src={group3} alt="frame3" />
+        </div>
+        <div className="manufacturebody__item--img--desktop">
+          <img src={grp3} alt="frame3" />
         </div>
       </div>
     </div>

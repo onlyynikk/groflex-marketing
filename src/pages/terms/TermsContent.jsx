@@ -72,6 +72,25 @@ export default function TermsContent() {
             can be tested free of charge and anonymously and is available for
             paid activation.
           </li>
+          <li>
+            Depending on the plan selection, the payment methods Digital payment
+            or bank transfer are available
+          </li>
+          <li>
+            Unless otherwise stated, our invoices are due immediately and
+            payable without the need for a reminder, you will be in default 30
+            days after the due date and receipt of the invoice if we have
+            pointed out this consequence to you in the invoice. However, we can
+            put you in default with a reminder beforehand.
+          </li>
+          <li>
+            The delivered goods remain our property until full payment has been
+            We are free to provide you with the invoices by letter mail or
+            electronically. If you are in default of payment, we are entitled to
+            refuse the service owed until the consideration has been paid in
+            full (right of retention) or to terminate the contract extraordinary
+            for good cause.
+          </li>
         </ul>
       </div>
       <div className="terms__content--wrapper">
@@ -104,33 +123,10 @@ export default function TermsContent() {
           </li>
         </ul>
       </div>
-      <div className="terms__content--wrapper">
-        <h3 className="termsandcondition__subtitle">F. Payment</h3>
-        <ul className="termsandcondition__wrapper--ul">
-          <li>
-            Depending on the plan selection, the payment methods Digital payment
-            or bank transfer are available
-          </li>
-          <li>
-            Unless otherwise stated, our invoices are due immediately and
-            payable without Without the need for a reminder, you will be in
-            default 30 days after the due date and receipt of the invoice if we
-            have pointed out this consequence to you in the invoice. However, we
-            can put you in default with a reminder beforehand.
-          </li>
-          <li>
-            The delivered goods remain our property until full payment has been
-            We are free to provide you with the invoices by letter mail or
-            electronically. If you are in default of payment, we are entitled to
-            refuse the service owed until the consideration has been paid in
-            full (right of retention) or to terminate the contract extraordinary
-            for good cause.
-          </li>
-        </ul>
-      </div>
+
       <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">
-          G. Warranty, maintenance, the rectification of defects
+          F. Warranty, maintenance, the rectification of defects
         </h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>
@@ -181,7 +177,7 @@ export default function TermsContent() {
       </div>
       <div className="terms__content--wrapper">
         <h3 className="termsandcondition__subtitle">
-          H. Cancellation & Refund Policy
+          G. Cancellation & Refund Policy
         </h3>
         <ul className="termsandcondition__wrapper--ul">
           <li>

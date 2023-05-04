@@ -1,0 +1,127 @@
+.hospitalityheader__container {
+  padding: 10rem 6rem 5rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.3) 0%,
+    rgba(0, 140, 139, 0.15) 34.38%,
+    rgba(0, 113, 202, 0.09) 69.27%,
+    rgba(0, 163, 83, 0) 100%
+  );
+}
+
+.hospitalityheader__section1 {
+  display: flex;
+  padding: 0 0 4rem 0;
+}
+
+.hospitalityheader__content {
+  padding-left: 3rem;
+}
+
+.hospitalityheader__content h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+}
+.hospitalityheader__content p {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+}
+
+.hospitalityheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.hospitalityheader__section2 {
+  padding: 4rem 0 3rem 0;
+}
+
+.hospitalityheader__section2 h3 {
+  font-family: var(--font);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.hospitality__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.hospitality__item {
+  display: flex;
+  background: linear-gradient(
+    90.63deg,
+    rgba(0, 113, 202, 0.16) 13.58%,
+    rgba(0, 163, 83, 0.16) 71.5%
+  );
+  border-radius: 8px;
+  padding: 0 1rem;
+}
+
+.hospitality__item img {
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 1720px) {
+  .hospitalityheader__container {
+    padding: 10rem 20rem 5rem 20rem;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 568px) {
+  .hospitalityheader__img img {
+    width: 357.46px;
+    height: 318px;
+  }
+  .hospitalityheader__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 800px) {
+  .hospitalityheader__section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 0 4rem 0;
+  }
+  .hospitalityheader__content {
+    padding: 0 0 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 360px) {
+  .hospitalityheader__container {
+    padding: 4rem 2rem;
+  }
+  .hospitalityheader__section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 0 4rem 0;
+  }
+  .hospitalityheader__content {
+    padding: 0 0 4rem 0;
+  }
+  .hospitality__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+  .hospitalityheader__content h1 {
+    font-size: 1.625rem;
+  }
+  .hospitalityheader__content p,
+  .hospitality__item p {
+    font-size: 1rem;
+  }
+
+  .hospitalityheader__section2 h3 {
+    font-size: 1.3rem;
+  }
+}

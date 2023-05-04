@@ -336,8 +336,8 @@
   }
 }
 
-/* @media screen and (min-width: 1720px) {
+@media screen and (min-width: 1720px) {
   .tab__container {
     padding: 1.6rem 20rem 40rem 20rem;
   }
-} */
+}

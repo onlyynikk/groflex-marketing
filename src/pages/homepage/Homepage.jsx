@@ -10,7 +10,7 @@ import "./components/feature/features.css";
 
 export default function Homepage() {
   return (
-    <div className="homepage__container">
+    <div>
       <HeroSection />
       <Features />
       <TabSection />

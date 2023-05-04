@@ -41,8 +41,8 @@
 }
 
 .cashnbank__header-img img {
-  width: 100%;
-  height: auto;
+  width: 436.96px;
+  height: 431.19px;
 }
 .cashnbank__header--section-2 {
   margin: 6rem 4rem;
@@ -102,7 +102,7 @@
 
 @media only screen and (max-width: 1280px) and (min-width: 850px) {
   .cashnbank__header--section-1 {
-    padding: 0 4rem;
+    padding: 0;
   }
   .cashnbank__header h1 {
     font-size: 45px;
@@ -139,18 +139,19 @@
   .cashnbank__header--section {
     padding: 0;
   }
+  .cashnbank__header--section-1 {
+    padding: 6rem 2rem 5rem 2rem;
+  }
 }
 
-@media only screen and (max-width: 850px) and (min-width: 360px) {
-  .cashnbank__header--section-1 {
-    padding: 6rem 2rem 4rem 2rem;
-  }
+@media only screen and (max-width: 1050px) and (min-width: 360px) {
   .cashnbank__header--section-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .cashnbank__header-img {
     display: flex;
     justify-content: center;

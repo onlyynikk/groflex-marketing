@@ -87,7 +87,7 @@
 .invoice__feature--question {
   font-family: var(--font);
   font-style: normal;
-  font-weight: 100;
+  font-weight: normal;
   font-size: 1.375rem;
   line-height: 140%;
   display: flex;
@@ -97,7 +97,7 @@
 .invoice__feature--answer {
   font-family: var(--font);
   font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 1.125rem;
   line-height: 28px;
   display: flex;

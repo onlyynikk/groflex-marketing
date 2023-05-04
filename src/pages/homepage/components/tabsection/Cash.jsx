@@ -16,7 +16,7 @@ export default function Cash() {
           </p>
           <div className="section__wrapper--seemore-div">
             <Link
-              to="/features/invoice-and-quotation"
+              to="/features/cash&bank-and-reconcilliation"
               className="section__wrapper--seemore"
             >
               See more

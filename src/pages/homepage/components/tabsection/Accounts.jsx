@@ -17,7 +17,7 @@ export default function Accounts() {
           </p>
           <div className="section__wrapper--seemore-div">
             <Link
-              to="/features/invoice-and-quotation"
+              to="/features/general-accounting"
               className="section__wrapper--seemore"
             >
               See more

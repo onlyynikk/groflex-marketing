@@ -10,13 +10,21 @@ export default function FooterSection1() {
           <h3>Product</h3>
           <Link to="/pricing">Pricing</Link>
           <Link to="/features/all-features">All Features</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms-&-conditions">Terms & Conditions</Link>
         </div>
       </div>
       <div>
         <div className="footer__ul">
-          <h3>Learn</h3>
+          <h3>Solutions</h3>
 
-          <Link to="https://blog.groflex.in">Blog</Link>
+          <Link to="/solutions/manufacture">Manufacturing</Link>
+          <Link to="/solutions/retail">Retail</Link>
+          <Link to="/solutions/E-commerce">E-commerce</Link>
+          <Link to="/solutions/small-and-medium-business">
+            Small and medium <br />
+            sized businesses
+          </Link>
         </div>
       </div>
       <div>
@@ -24,9 +32,12 @@ export default function FooterSection1() {
           <h3>Company</h3>
           <Link to="/contact-us">Contact Us</Link>
           <Link to="/about-us">About Us</Link>
-
-          <Link to="/terms-&-conditions">Terms & Conditions</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
+        </div>
+      </div>
+      <div>
+        <div className="footer__ul">
+          <h3>Learn</h3>
+          <Link to="https://blog.groflex.in/">Blogs</Link>
         </div>
       </div>
     </div>

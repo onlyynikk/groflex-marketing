@@ -11,10 +11,10 @@ export default function AboutUsHeader() {
         </div>
         <div className="aboutus__subtitle">
           <p>
-            Our mission is to make your life easier with our secure innovative
-            simple to use online software that you can create, send and manage
-            estimates and invoices online without the need for software
-            downloads
+            Our mission is to <b>make your life easier</b> with our secure
+            innovative simple to use online software that you can create, send
+            and manage estimates and invoices online without the need for
+            software downloads
           </p>
         </div>
       </div>

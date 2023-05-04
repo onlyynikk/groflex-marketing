@@ -1,0 +1,122 @@
+.accountantheader__container {
+  padding: 10rem 6rem 5rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.35) 0%,
+    rgba(0, 140, 139, 0.175) 35.42%,
+    rgba(0, 113, 202, 0.105) 65.62%,
+    rgba(0, 163, 83, 0) 100%
+  );
+}
+
+.accountantheader__section1 {
+  padding: 0 0 8rem 0;
+  display: flex;
+}
+
+.accountantheader__content h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+}
+.accountantheader__content p,
+.accountantheader__item p {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+}
+.accountantheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.accountantheader__section2 h1 {
+  font-weight: 700;
+  font-family: var(--font);
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.accountantheader__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.accountantheader__item {
+  background: linear-gradient(
+    90.63deg,
+    rgba(0, 113, 202, 0.16) 13.58%,
+    rgba(0, 163, 83, 0.16) 71.5%
+  );
+  border-radius: 8px;
+  display: flex;
+
+  padding: 0 1rem;
+}
+.accountantheader__item img {
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width: 1720px) {
+  .accountantheader__container {
+    padding: 10rem 20rem 5rem 20rem;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 568px) {
+  .accountantheader__img img {
+    width: 469px;
+    height: 435.18px;
+  }
+  .accountantheader__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .accountantheader__section1 {
+    flex-direction: column;
+  }
+  .accountantheader__content {
+    padding-bottom: 5rem;
+  }
+  .accountantheader__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .accountantheader__container {
+    padding: 5rem 2rem;
+  }
+  .accountantheader__section1 {
+    flex-direction: column;
+  }
+  .accountantheader__content {
+    padding-bottom: 5rem;
+  }
+  .accountantheader__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+
+  .accountantheader__content h1 {
+    font-size: 1.625rem;
+  }
+
+  .accountantheader__content p,
+  .accountantheader__item p {
+    font-size: 1rem;
+  }
+  .accountantheader__section2 h1 {
+    font-size: 1.35rem;
+  }
+}
