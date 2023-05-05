@@ -1,11 +1,11 @@
 import React from "react";
 import "./ecommercebody.css";
-import group1 from "../../../../../assets/solutions/ecommerce/group1.png";
-import group2 from "../../../../../assets/solutions/ecommerce/group2.png";
-import group3 from "../../../../../assets/solutions/ecommerce/group3.png";
-import phonegrp1 from "../../../../../assets/solutions/ecommerce/phonegrp1.png";
-import phonegrp2 from "../../../../../assets/solutions/ecommerce/phonegrp2.png";
-import phonegrp3 from "../../../../../assets/solutions/ecommerce/phonegrp3.png";
+import group1 from "../../../../../assets/solutions/ecommerce/group1.webp";
+import group2 from "../../../../../assets/solutions/ecommerce/group2.webp";
+import group3 from "../../../../../assets/solutions/ecommerce/group3.webp";
+import phonegrp1 from "../../../../../assets/solutions/ecommerce/phonegrp1.webp";
+import phonegrp2 from "../../../../../assets/solutions/ecommerce/phonegrp2.webp";
+import phonegrp3 from "../../../../../assets/solutions/ecommerce/phonegrp3.webp";
 
 export default function EcommerceBody() {
   return (

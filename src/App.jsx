@@ -24,6 +24,7 @@ import Cfo from "./pages/solutions/cfo/Cfo";
 import SmallMediumBusiness from "./pages/solutions/small-medium-business/SmallMediumBusiness";
 import Accountants from "./pages/solutions/accountants/Accountants";
 import BusinessOwners from "./pages/solutions/small-business-owners/BusinessOwners";
+import Pricing from "./pages/pricing/Pricing";
 
 function App() {
   const queryParameters = new URLSearchParams(
@@ -94,6 +95,9 @@ function App() {
           path="/solutions/small-business-owners"
           element={<BusinessOwners />}
         />
+
+        {/* <-----------pricing----------> */}
+        <Route path="/pricing" element={<Pricing />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./accountantbody.css";
-import group1 from "../../../../../assets/solutions/accountants/group1.png";
-import group2 from "../../../../../assets/solutions/accountants/group2.png";
-import group3 from "../../../../../assets/solutions/accountants/group3.png";
-import phonegrp1 from "../../../../../assets/solutions/accountants/phonegrp1.png";
-import phonegrp2 from "../../../../../assets/solutions/accountants/phonegrp2.png";
-import phonegrp3 from "../../../../../assets/solutions/accountants/phonegrp3.png";
+import group1 from "../../../../../assets/solutions/accountants/group1.webp";
+import group2 from "../../../../../assets/solutions/accountants/group2.webp";
+import group3 from "../../../../../assets/solutions/accountants/group3.webp";
+import phonegrp1 from "../../../../../assets/solutions/accountants/phonegrp1.webp";
+import phonegrp2 from "../../../../../assets/solutions/accountants/phonegrp2.webp";
+import phonegrp3 from "../../../../../assets/solutions/accountants/phonegrp3.webp";
 
 export default function AccountantBody() {
   return (

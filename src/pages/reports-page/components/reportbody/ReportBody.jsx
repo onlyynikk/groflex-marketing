@@ -1,7 +1,6 @@
 import "./reportbody.css";
 import React from "react";
 import { list1 } from "../ReportsData";
-import { GoPrimitiveDot } from "react-icons/go";
 import report1 from "../../../../assets/reports/reports-1.png";
 import report2 from "../../../../assets/reports/reports-2.png";
 import report3 from "../../../../assets/reports/reports-3.png";

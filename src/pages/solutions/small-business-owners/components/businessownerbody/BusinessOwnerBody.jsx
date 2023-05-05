@@ -1,11 +1,11 @@
 import React from "react";
 import "./businessownerbody.css";
-import group1 from "../../../../../assets/solutions/businessowner/group1.png";
-import group2 from "../../../../../assets/solutions/businessowner/group2.png";
-import group3 from "../../../../../assets/solutions/businessowner/group3.png";
-import phonegrp1 from "../../../../../assets/solutions/businessowner/phonegrp1.png";
-import phonegrp2 from "../../../../../assets/solutions/businessowner/phonegrp2.png";
-import phonegrp3 from "../../../../../assets/solutions/businessowner/phonegrp3.png";
+import group1 from "../../../../../assets/solutions/businessowner/group1.webp";
+import group2 from "../../../../../assets/solutions/businessowner/group2.webp";
+import group3 from "../../../../../assets/solutions/businessowner/group3.webp";
+import phonegrp1 from "../../../../../assets/solutions/businessowner/phonegrp1.webp";
+import phonegrp2 from "../../../../../assets/solutions/businessowner/phonegrp2.webp";
+import phonegrp3 from "../../../../../assets/solutions/businessowner/phonegrp3.webp";
 
 export default function BusinessOwnerBody() {
   return (

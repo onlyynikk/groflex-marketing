@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import cash from "../../../../assets/homepage/cashnbank.png";
+import cash from "../../../../assets/homepage/cashnbank.webp";
 
 export default function Cash() {
   return (

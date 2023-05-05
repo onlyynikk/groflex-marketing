@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import accounts from "../../../../assets/homepage/account.png";
+import accounts from "../../../../assets/homepage/account.webp";
 
 export default function Accounts() {
   return (

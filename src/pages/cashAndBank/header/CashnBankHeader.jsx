@@ -2,9 +2,7 @@ import React from "react";
 import "./cashnbankheader.css";
 import { AiOutlineCheck } from "react-icons/ai";
 import BtnPrimary from "../../../shared/btnGreen/BtnPrimary";
-// import quotation from "../../../assets/cash&bank/cashnbank-quotation.png";
-import cash from "../../../assets/cash&bank/cash&bank hero.png";
-import avatar from "../../../assets/cash&bank/cashnbankAvatar.png";
+import avatar from "../../../assets/cash&bank/cashnbankAvatar.webp";
 
 export default function CashnBankHeader() {
   return (

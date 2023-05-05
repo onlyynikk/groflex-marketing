@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import quotations from "../../../../assets/homepage/streamline.png";
+import quotations from "../../../../assets/homepage/streamline.webp";
 
 export default function Streamline() {
   return (

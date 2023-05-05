@@ -1,8 +1,8 @@
 import React from "react";
 import "./hospitalitybody.css";
-import group1 from "../../../../../assets/solutions/hopsitality/group1.png";
-import group2 from "../../../../../assets/solutions/hopsitality/group2.png";
-import group3 from "../../../../../assets/solutions/hopsitality/group3.png";
+import group1 from "../../../../../assets/solutions/hopsitality/group1.webp";
+import group2 from "../../../../../assets/solutions/hopsitality/group2.webp";
+import group3 from "../../../../../assets/solutions/hopsitality/group3.webp";
 
 export default function HospitalityBody() {
   return (

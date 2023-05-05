@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./accountingbody.css";
-import group1 from "../../../../assets/generalAcc/generalAcc-group1.png";
-import group2 from "../../../../assets/generalAcc/generalAcc-group2.png";
-import group3 from "../../../../assets/generalAcc/generalAcc-group3.png";
-import group4 from "../../../../assets/generalAcc/generalAcc-group4.png";
-import phonegrp1 from "../../../../assets/generalAcc/generalAcc-phonegrp1.png";
-import phonegrp2 from "../../../../assets/generalAcc/generalAcc-phonegrp2.png";
-import phonegrp3 from "../../../../assets/generalAcc/generalAcc-phonegrp3.png";
-import phonegrp4 from "../../../../assets/generalAcc/generalAcc-phonegrp4.png";
+import group1 from "../../../../assets/generalAcc/generalAcc-group1.webp";
+import group2 from "../../../../assets/generalAcc/generalAcc-group2.webp";
+import group3 from "../../../../assets/generalAcc/generalAcc-group3.webp";
+import group4 from "../../../../assets/generalAcc/generalAcc-group4.webp";
+import phonegrp1 from "../../../../assets/generalAcc/generalAcc-phonegrp1.webp";
+import phonegrp2 from "../../../../assets/generalAcc/generalAcc-phonegrp2.webp";
+import phonegrp3 from "../../../../assets/generalAcc/generalAcc-phonegrp3.webp";
+import phonegrp4 from "../../../../assets/generalAcc/generalAcc-phonegrp4.webp";
 import QuestionAnswer from "../../../../helpers/questionanswer/QuestionAnswer";
 import { item1, item2, item3, item4 } from "../Data";
 

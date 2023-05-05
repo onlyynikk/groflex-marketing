@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./cashbankbody.css";
 import { item1, item2, item3 } from "./CashBankData";
-import group1 from "../../../assets/cash&bank/cash&bank-group1.png";
-import group2 from "../../../assets/cash&bank/cash&bank-group2.png";
-import group3 from "../../../assets/cash&bank/cash&bank-group3.png";
+import group1 from "../../../assets/cash&bank/cash&bank-group1.webp";
+import group2 from "../../../assets/cash&bank/cash&bank-group2.webp";
+import group3 from "../../../assets/cash&bank/cash&bank-group3.webp";
 import QuestionAnswer from "../../../helpers/questionanswer/QuestionAnswer";
 
 export default function CashnBankBody() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./tabsection.css";
-import payments from "../../../../assets/homepage/payment.png";
+import payments from "../../../../assets/homepage/payment.webp";
 
 export default function Payments() {
   return (

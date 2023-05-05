@@ -1,12 +1,11 @@
 import React from "react";
 import "./manufacturebody.css";
-import group1 from "../../../../../assets/solutions/manufacture/group1.png";
-import group2 from "../../../../../assets/solutions/manufacture/group2.png";
-import group3 from "../../../../../assets/solutions/manufacture/group3.png";
-import grp1 from "../../../../../assets/solutions/manufacture/grp1.png";
-import grp2 from "../../../../../assets/solutions/manufacture/grp2.png";
-import grp3 from "../../../../../assets/solutions/manufacture/grp3.png";
-
+import group1 from "../../../../../assets/solutions/manufacture/group1.webp";
+import group2 from "../../../../../assets/solutions/manufacture/group2.webp";
+import group3 from "../../../../../assets/solutions/manufacture/group3.webp";
+import grp1 from "../../../../../assets/solutions/manufacture/grp1.webp";
+import grp2 from "../../../../../assets/solutions/manufacture/grp2.webp";
+import grp3 from "../../../../../assets/solutions/manufacture/grp3.webp";
 export default function ManufactureBody() {
   return (
     <div className="manufacturebody__container">

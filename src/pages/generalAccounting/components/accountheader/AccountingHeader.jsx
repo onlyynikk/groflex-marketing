@@ -1,7 +1,6 @@
 import "./accountheader.css";
 import React from "react";
-// import accountingframe from "../../../../assets/generalAcc/generalAcc-frame.png";
-import avatar from "../../../../assets/generalAcc/generalAcc-avatar.png";
+import avatar from "../../../../assets/generalAcc/generalAcc-avatar.webp";
 import BtnPrimary from "../../../../shared/btnGreen/BtnPrimary";
 
 import { AiOutlineCheck } from "react-icons/ai";

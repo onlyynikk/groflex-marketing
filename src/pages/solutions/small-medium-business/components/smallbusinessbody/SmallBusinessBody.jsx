@@ -1,8 +1,8 @@
 import React from "react";
 import "./smallbusinessbody.css";
-import group1 from "../../../../../assets/solutions/smallbusiness/group1.png";
-import group2 from "../../../../../assets/solutions/smallbusiness/group2.png";
-import group3 from "../../../../../assets/solutions/smallbusiness/group3.png";
+import group1 from "../../../../../assets/solutions/smallbusiness/group1.webp";
+import group2 from "../../../../../assets/solutions/smallbusiness/group2.webp";
+import group3 from "../../../../../assets/solutions/smallbusiness/group3.webp";
 
 export default function SmallBusinessBody() {
   return (
