@@ -11,7 +11,7 @@ import book from "../../../../assets/book.svg";
 export default function Features() {
   return (
     <div className="features__container">
-      <h1 className="features__title">Key Features</h1>
+      <h1 className="features__title">Key Benefits</h1>
       <div className="cards">
         <div className="card">
           <h2 className="features__heading">

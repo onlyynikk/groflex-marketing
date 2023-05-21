@@ -19,6 +19,8 @@ import locationgreen from "../../assets/icons/location-green.svg";
 import medal from "../../assets/icons/medal.svg";
 import medalgreen from "../../assets/icons/medal-green.svg";
 import msge from "../../assets/icons/msge.svg";
+import pc from "../../assets/icons/pc.svg";
+import pcgreen from "../../assets/icons/pc-green.svg";
 import msgegreen from "../../assets/icons/msge-green.svg";
 import percent from "../../assets/icons/percent.svg";
 import percentgreen from "../../assets/icons/percent-green.svg";
@@ -41,6 +43,7 @@ export default function Navlinks() {
   const [icon7, setIcon7] = useState(false);
   const [icon8, setIcon8] = useState(false);
   const [icon9, setIcon9] = useState(false);
+  const [icon10, setIcon10] = useState(false);
 
   function handleLevel3LinksClick() {
     setAccountingArrow(!accountingArrow);
@@ -138,7 +141,8 @@ export default function Navlinks() {
               <div className="dropdown__menu--items box2">
                 <div className="dropdown__menu--item--section1">
                   <Link
-                    onClick={() => setAccountingArrow(false)}
+                    to="/features/upcoming-features"
+                    onClick={() => setfeaturesArrow(false)}
                     onMouseOver={() => setIcon1(true)}
                     onMouseLeave={() => setIcon1(false)}
                   >
@@ -169,7 +173,8 @@ export default function Navlinks() {
               <div className="dropdown__menu--items box3">
                 <div className="dropdown__menu--item--section1">
                   <Link
-                    onClick={() => setAccountingArrow(false)}
+                    to="/features/upcoming-features"
+                    onClick={() => setfeaturesArrow(false)}
                     onMouseOver={() => setIcon2(true)}
                     onMouseLeave={() => setIcon2(false)}
                   >
@@ -200,7 +205,8 @@ export default function Navlinks() {
               <div className="dropdown__menu--items box4">
                 <div className="dropdown__menu--item--section1">
                   <Link
-                    onClick={() => setAccountingArrow(false)}
+                    to="/features/upcoming-features"
+                    onClick={() => setfeaturesArrow(false)}
                     onMouseOver={() => setIcon3(true)}
                     onMouseLeave={() => setIcon3(false)}
                   >
@@ -231,7 +237,8 @@ export default function Navlinks() {
               <div className="dropdown__menu--items box5">
                 <div className="dropdown__menu--item--section1">
                   <Link
-                    onClick={() => setAccountingArrow(false)}
+                    to="/features/upcoming-features"
+                    onClick={() => setfeaturesArrow(false)}
                     onMouseOver={() => setIcon4(true)}
                     onMouseLeave={() => setIcon4(false)}
                   >
@@ -262,7 +269,8 @@ export default function Navlinks() {
               <div className="dropdown__menu--items box6">
                 <div className="dropdown__menu--item--section1">
                   <Link
-                    onClick={() => setAccountingArrow(false)}
+                    to="/features/upcoming-features"
+                    onClick={() => setfeaturesArrow(false)}
                     onMouseOver={() => setIcon5(true)}
                     onMouseLeave={() => setIcon5(false)}
                   >
@@ -388,6 +396,9 @@ export default function Navlinks() {
           )}
         </OnClickOutside>
       </div>
+      {/* <Link to="/pricing" className="navbar__link">
+        Pricing
+      </Link> */}
       <div className="dropdown__container">
         <OnClickOutside onClickOutside={() => setCompanyArrow(false)}>
           <Link
@@ -448,6 +459,19 @@ export default function Navlinks() {
           </Link>
           {resourcesArrow && (
             <div className="dropdown__menu--resources">
+              <Link
+                to="https://tutorials.groflex.in/"
+                onMouseOver={() => setIcon10(true)}
+                onMouseLeave={() => setIcon10(false)}
+              >
+                {icon10 ? (
+                  <img src={pcgreen} alt="icon" className="icon-green" />
+                ) : (
+                  <img src={pc} alt="icon" className="icon-black" />
+                )}
+                Tutorials
+              </Link>
+
               <Link
                 to="https://blog.groflex.in/"
                 onMouseOver={() => setIcon8(true)}

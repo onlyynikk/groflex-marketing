@@ -1,0 +1,115 @@
+.upcomingbody__container {
+  padding-top: 4rem;
+}
+
+.upcomingbody__phn-img {
+  display: none;
+}
+.upcomingbody__phn-img img {
+  width: 100%;
+  height: auto;
+}
+
+.upcomingbody__even--box {
+  padding: 2rem 0 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.upcomingbody__odd--box {
+  padding: 2rem 6rem 2rem 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.upcomingbody__content h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  font-family: var(--font);
+}
+.upcomingbody__content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: var(--font);
+}
+
+.upcomingbody__desk-img img {
+  width: 100%;
+  height: auto;
+}
+
+.box-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 113, 202, 0) -3.56%,
+    rgba(0, 113, 202, 0.15) 25.81%,
+    rgba(0, 163, 83, 0.15) 70.66%,
+    rgba(0, 163, 83, 0) 98.97%
+  );
+}
+
+@media only screen and (min-width: 1720px) {
+  .upcomingbody__even--box {
+    padding: 2rem 0 2rem 20rem;
+  }
+  .upcomingbody__odd--box {
+    padding: 2rem 20rem 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  .upcomingbody__desk-img {
+    display: none;
+  }
+  .upcomingbody__phn-img {
+    display: block;
+  }
+  .upcomingbody__even--box {
+    padding: 5rem 4rem 6rem 4rem;
+    display: block;
+  }
+  .upcomingbody__odd--box {
+    padding: 5rem 4rem 6rem 4rem;
+    display: block;
+  }
+  .upcomingbody__content h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .upcomingbody__content p {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .upcomingbody__container {
+    padding: 0;
+  }
+  .upcomingbody__desk-img {
+    display: none;
+  }
+  .upcomingbody__phn-img {
+    display: block;
+  }
+  .upcomingbody__even--box {
+    padding: 3rem 2rem;
+    display: block;
+  }
+  .upcomingbody__odd--box {
+    padding: 3rem 2rem;
+    display: block;
+  }
+  .upcomingbody__content h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .upcomingbody__content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+  }
+}

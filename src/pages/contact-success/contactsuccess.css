@@ -1,13 +1,13 @@
 .thankyou__content {
-  background: #edf7ff;
-  box-shadow: 0px 7px 4px rgba(0, 113, 202, 0.2);
-  border-radius: 30px;
-  padding: 6rem 6rem;
+  padding: 3rem 0;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: #e0e8e4;
+  box-shadow: 0px 7px 4px rgba(0, 113, 202, 0.2);
+  border-radius: 20px;
 }
 
 .thankyou__wrapper {

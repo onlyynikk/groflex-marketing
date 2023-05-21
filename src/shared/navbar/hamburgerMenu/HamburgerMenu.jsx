@@ -8,8 +8,10 @@ import OnClickOutside from "../../onClickOutside/OnClickOutside";
 OnClickOutside;
 import BtnLight from "../../btnLight/BtnLight";
 import acc from "../../../assets/icons/acc.svg";
-// import accgreen from "../../../assets/icons/acc-green.svg";
+import accgreen from "../../../assets/icons/acc-green.svg";
 import arrow from "../../../assets/icons/arrow.svg";
+import pc from "../../../assets/icons/pc.svg";
+// import pcgreen from '../../../assets/icons/pc-green.svg'
 // import arrowgreen from "../../../assets/icons/arrow-green.svg";
 import bookmark from "../../../assets/icons/bookmark.svg";
 // import bookmarkgreen from "../../../assets/icons/bookmark-green.svg";
@@ -112,8 +114,11 @@ export default function HamburgerMenu({ setToggle }) {
                 onClick={() => setAccountingArrow(!accountingArrow)}
               >
                 <Link className={accountingArrow ? "accounting--active " : ""}>
-                  <img src={acc} alt="icon" className="icon-black" />
-                  {/* <img src={accgreen} alt="icon" className="icon-green" /> */}
+                  {accountingArrow ? (
+                    <img src={accgreen} alt="icon" className="icon-green" />
+                  ) : (
+                    <img src={acc} alt="icon" className="icon-black" />
+                  )}
                   Accounting
                 </Link>
                 {accountingArrow ? <IoIosArrowUp /> : <IoIosArrowDown />}
@@ -156,7 +161,10 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
             <div className="dropdown__menu--items box2">
               <div className="dropdown__menu--item--section1">
-                <Link onClick={() => setAccountingArrow(false)}>
+                <Link
+                  to="/features/upcoming-features"
+                  onClick={() => setToggle(false)}
+                >
                   <img src={bookmark} alt="icon" className="icon-black" />
                   {/* <img src={bookmarkgreen} alt="icon" className="icon-green" /> */}
                   CRM Systems
@@ -176,7 +184,10 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
             <div className="dropdown__menu--items box3">
               <div className="dropdown__menu--item--section1">
-                <Link onClick={() => setAccountingArrow(false)}>
+                <Link
+                  to="/features/upcoming-features"
+                  onClick={() => setToggle(false)}
+                >
                   <img src={percent} alt="icon" className="icon-black" />
                   {/* <img src={percentgreen} alt="icon" className="icon-green" /> */}
                   E-Commerce
@@ -196,8 +207,16 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
             <div className="dropdown__menu--items box4">
               <div className="dropdown__menu--item--section1">
-                <Link onClick={() => setAccountingArrow(false)}>
-                  <img src={calender} alt="icon" className="icon-black" />
+                <Link
+                  to="/features/upcoming-features"
+                  onClick={() => setToggle(false)}
+                >
+                  <img
+                    to="/features/upcoming-features"
+                    src={calender}
+                    alt="icon"
+                    className="icon-black"
+                  />
                   {/* <img src={calendegreen} alt="icon" className="icon-green" /> */}
                   Inventory management
                 </Link>
@@ -216,8 +235,16 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
             <div className="dropdown__menu--items box5">
               <div className="dropdown__menu--item--section1">
-                <Link onClick={() => setAccountingArrow(false)}>
-                  <img src={medal} alt="icon" className="icon-black" />
+                <Link
+                  to="/features/upcoming-features"
+                  onClick={() => setToggle(false)}
+                >
+                  <img
+                    to="/features/upcoming-features"
+                    src={medal}
+                    alt="icon"
+                    className="icon-black"
+                  />
                   {/* <img src={medalgreen} alt="icon" className="icon-green" /> */}
                   Human Resources
                 </Link>
@@ -236,7 +263,10 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
             <div className="dropdown__menu--items box6">
               <div className="dropdown__menu--item--section1">
-                <Link onClick={() => setAccountingArrow(false)}>
+                <Link
+                  to="/features/upcoming-features"
+                  onClick={() => setToggle(false)}
+                >
                   <img src={branch} alt="icon" className="icon-black" />
                   {/* <img src={branchgreen} alt="icon" className="icon-green" /> */}
                   Supply Chain
@@ -344,6 +374,13 @@ export default function HamburgerMenu({ setToggle }) {
             </div>
           </div>
         )}
+        {/* <Link
+          to="/pricing"
+          className="hamburger__menu--link"
+          onClick={() => setToggle(false)}
+        >
+          Pricing
+        </Link> */}
         <Link
           className={
             companyArrow
@@ -390,6 +427,14 @@ export default function HamburgerMenu({ setToggle }) {
         </Link>
         {resourcesArrow && (
           <div className="hamburger__company--sublinks-wrapper">
+            <Link
+              to="https://tutorials.groflex.in/"
+              onClick={() => setToggle(false)}
+            >
+              <img src={pc} alt="icon" className="icon-black" />
+              {/* <img src={locationgreen} alt="icon" className="icon-green" /> */}
+              Tutorials
+            </Link>
             <Link
               to="https://blog.groflex.in/"
               onClick={() => setToggle(false)}

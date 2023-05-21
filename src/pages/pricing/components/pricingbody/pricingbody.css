@@ -1,0 +1,246 @@
+.pricingbody__container {
+  padding: 3rem 6rem;
+}
+
+.pricingbody__section {
+  border: 2px solid #00a353;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.pricing__content--wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pricingbody__section--content {
+  display: flex;
+  flex-direction: column;
+}
+.pricingbody__section h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  font-family: var(--font);
+  color: #272d30;
+  margin: 0 0 2rem 0;
+}
+
+.pricing__details {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  font-family: var(--font);
+  color: #272d30;
+  margin: 0 0 2rem 0;
+}
+
+.pricing__subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--font);
+  text-transform: lowercase;
+  color: #272d30;
+}
+
+.picingbody__detail--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.picingbody__detail--btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 165px;
+  height: 40px;
+  background: #ecfcf4;
+  border: 1px solid #00a353;
+  border-radius: 4px;
+  color: #00a353;
+  cursor: pointer;
+}
+
+.plan__section p {
+  color: #272d30;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.pricingbody__plan--container-close {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-out;
+}
+
+.pricingbody__plan--container-open {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 1000px;
+  height: auto;
+  overflow: hidden;
+  transition: max-height 500ms ease-in;
+}
+
+.price__btn--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.billed__btn-container {
+  margin-bottom: 1rem;
+}
+.billed__monthly-btn {
+  width: 124px;
+  height: 37px;
+  font-family: var(--font);
+  background: #00a353;
+  box-shadow: 0px 4px 4px rgba(0, 113, 202, 0.25);
+  border-radius: 4px;
+  border: none;
+  margin-right: 1rem;
+  color: white;
+}
+.billed__yearly-btn {
+  border: none;
+  width: 124px;
+  height: 37px;
+  font-family: var(--font);
+  background: #edf7ff;
+  box-shadow: 0px 4px 4px rgba(0, 113, 202, 0.25);
+  border-radius: 4px;
+  color: #00a353;
+}
+
+.billed__yearly-btn:hover,
+.billed__monthly-btn:hover {
+  box-shadow: 0.5px 4px 8px rgb(154, 154, 154);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.paid__pricing--wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  color: #00a353;
+}
+.paid__pricing--wrapper p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--font);
+  margin: 1rem 1rem 0 0;
+}
+
+@media only screen and (min-width: 1720px) {
+  .pricingbody__container {
+    padding: 3rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .pricingbody__section--content {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .pricingbody__plan--container-open {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 1000px;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 500ms ease-in;
+  }
+  .pricingbody__plan--container-close {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease-out;
+  }
+  .paid__pricing--wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #00a353;
+  }
+  .paid__pricing--wrapper p {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .paid__pricing--wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: #00a353;
+  }
+  .paid__pricing--wrapper p {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .pricingbody__container {
+    padding: 3rem 2rem;
+  }
+  .pricing__content--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricingbody__section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .pricing__details {
+    margin-bottom: 1rem;
+  }
+  .pricingbody__section--content {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .pricingbody__plan--container-open {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricingbody__plan--container-close {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricingbody__section h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  .pricingbody__section--content p {
+    font-size: 16px;
+  }
+  .price__btn--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .picingbody__detail--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .picingbody__detail--btn button {
+    margin-top: 1rem;
+  }
+}

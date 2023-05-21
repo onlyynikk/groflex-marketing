@@ -1,0 +1,123 @@
+.main-img {
+  width: 100%;
+  height: auto;
+}
+
+.subfeatures__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subfeatures__content h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  font-family: var(--font);
+}
+.arrow {
+  display: none;
+}
+
+.subfeatures__content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--font);
+  text-align: center;
+}
+
+.subfeatures__content a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: var(--font);
+  text-decoration: none;
+  border-bottom: 2px solid #0071ca;
+  color: #272d30;
+}
+
+@media only screen and (min-width: 1720px) {
+  .subfeatures__img img {
+    width: 701px;
+    height: 485px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .subfeatures__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .subfeatures__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+  .subfeatures__img {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .subfeatures__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .subfeatures__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .main-img {
+    width: 434.5px;
+    height: 341.46px;
+  }
+  .subfeatures__img {
+    display: flex;
+    align-items: center;
+  }
+  .subfeatures__content h2 {
+    font-size: 20px;
+  }
+  .subfeatures__content p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 660px) {
+  .main-img {
+    width: 534.5px;
+    height: 341.46px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 360px) {
+  .main-img {
+    width: 300.5px;
+    height: 200.46px;
+  }
+}

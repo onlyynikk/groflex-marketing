@@ -1,0 +1,82 @@
+.pricingheader__container {
+  padding: 10rem 6rem 5rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 163, 83, 0.35) 0%,
+    rgba(0, 140, 139, 0.175) 35.42%,
+    rgba(0, 113, 202, 0.105) 65.62%,
+    rgba(0, 163, 83, 0) 100%
+  );
+  display: flex;
+}
+
+.pricingheader__img img {
+  width: 100%;
+  height: auto;
+}
+
+.pricingheader__content h1 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+  font-family: var(--font);
+}
+.pricingheader__content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155%;
+  font-family: var(--font);
+}
+
+@media only screen and (min-width: 1720px) {
+  .pricingheader__container {
+    padding: 10rem 20rem 5rem 20rem;
+  }
+}
+
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  .pricingheader__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricingheader__img img {
+    width: 542.72px;
+    height: 440px;
+  }
+  .pricingheader__content {
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  .pricingheader__container {
+    padding: 5rem 2rem 4rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricingheader__content {
+    padding-bottom: 3rem;
+  }
+  .pricingheader__content h1 {
+    font-size: 1.625rem;
+  }
+  .pricingheader__content p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .pricingheader__img img {
+    width: 442.72px;
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 360px) {
+  .pricingheader__img img {
+    width: 100%;
+    height: auto;
+  }
+}

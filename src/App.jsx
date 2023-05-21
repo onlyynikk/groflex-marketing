@@ -25,6 +25,7 @@ import SmallMediumBusiness from "./pages/solutions/small-medium-business/SmallMe
 import Accountants from "./pages/solutions/accountants/Accountants";
 import BusinessOwners from "./pages/solutions/small-business-owners/BusinessOwners";
 import Pricing from "./pages/pricing/Pricing";
+import UpcomingFeatures from "./pages/upcomingfeatures/UpcomingFeatures";
 
 function App() {
   const queryParameters = new URLSearchParams(
@@ -59,6 +60,10 @@ function App() {
         <Route path="/terms-&-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route
+          path="/features/upcoming-features"
+          element={<UpcomingFeatures />}
+        />
 
         {/* <-----Features Pages-----> */}
 

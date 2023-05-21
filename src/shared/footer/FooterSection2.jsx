@@ -8,7 +8,7 @@ export default function FooterSection1() {
       <div>
         <div className="footer__ul">
           <h3>Product</h3>
-          <Link to="/pricing">Pricing</Link>
+          <Link to="/">Pricing</Link>
           <Link to="/features/all-features">All Features</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/terms-&-conditions">Terms & Conditions</Link>

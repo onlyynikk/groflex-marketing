@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./slideshow.css";
-import { Carousel } from "react-responsive-carousel";
-import slide1 from "../../../../assets/slide1.jpeg";
-import slide2 from "../../../../assets/slide2.jpeg";
-import slide3 from "../../../../assets/slide3.jpeg";
-import slide4 from "../../../../assets/slide4.jpeg";
-import slide5 from "../../../../assets/slide5.jpeg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
+import slide1 from "../../../../assets/homepage/new/slide1.webp";
+import slide2 from "../../../../assets/homepage/new/slide2.webp";
+import slide3 from "../../../../assets/homepage/new/slide3.webp";
+import slide4 from "../../../../assets/homepage/new/slide4.webp";
+import slide5 from "../../../../assets/homepage/new/slide5.webp";
+import avatar from "../../../../assets/homepage/new/slideshowavatar.webp";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const images = [slide1, slide2, slide3, slide4, slide5];
 
@@ -38,7 +39,10 @@ export default function SlideShow() {
 
   return (
     <div className="slideshow">
-      <h1>Testimonials</h1>
+      <div className="slideshow__header">
+        <img src={avatar} alt="illustrations" />
+        <h1>What our clients says about us</h1>
+      </div>
 
       {/* for desktops */}
 
@@ -46,20 +50,36 @@ export default function SlideShow() {
         onMouseOver={() => setDelay(10000)}
         onMouseLeave={() => setDelay(2500)}
         className="slides-desktop"
-        style={{ transform: `translate3d(${-index * 60}%, 0, 0)` }}
+        style={{ transform: `translate3d(${-index * 20}%, 0, 0)` }}
       >
         {images.map((image, index) => (
           <div className="slide-desktop" key={index}>
             <img src={image} alt="testimonials" />
           </div>
         ))}
+        {/* <Carousel
+          showArrows={true}
+          showStatus={false}
+          swipeable={true}
+          showThumbs={false}
+          centerMode
+          infiniteLoop
+          autoPlay={true}
+          stopOnHover={true}
+        >
+          {images.map((img) => (
+            <div style={{ margin: "0 3rem", borderRadius: "40px" }}>
+              <img src={img} alt="testimonials" />
+            </div>
+          ))}
+        </Carousel> */}
       </div>
 
       {/* for tablets */}
 
       <div
         className="slides-tablet"
-        style={{ transform: `translate3d(${-index * 65}%, 0, 0)` }}
+        style={{ transform: `translate3d(${-index * 35}%, 0, 0)` }}
       >
         {images.map((image, index) => (
           <div className="slide-tablet" key={index}>
@@ -91,6 +111,21 @@ export default function SlideShow() {
             }}
           ></div>
         ))}
+
+        {/* <Carousel
+          showArrows={true}
+          showIndicators={true}
+          showStatus={false}
+          swipeable={true}
+          showThumbs={false}
+          autoPlay={true}
+        >
+          {images.map((img) => (
+            <div>
+              <img src={img} alt="testimonials" />
+            </div>
+          ))}
+        </Carousel> */}
       </div>
     </div>
   );
