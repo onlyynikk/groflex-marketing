@@ -28,7 +28,7 @@
 }
 
 .aboutus__testimonial--items {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   padding: 6rem 6rem 3rem 6rem;

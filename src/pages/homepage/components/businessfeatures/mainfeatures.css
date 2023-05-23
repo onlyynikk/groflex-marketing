@@ -82,6 +82,19 @@
   display: none;
 }
 
+.hidden-div {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.visible-div {
+  opacity: 1;
+  height: auto;
+  max-height: fit-content;
+  transition: opacity 500ms ease-in;
+}
+
 @media only screen and (min-width: 1720px) {
   .mainfeatures__wrapper {
     padding: 3rem 20rem;

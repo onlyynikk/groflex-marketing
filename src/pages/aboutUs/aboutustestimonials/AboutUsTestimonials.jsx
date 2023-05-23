@@ -1,9 +1,10 @@
 import React from "react";
-import team from "../../../assets/aboutUs/team.png";
+import team from "../../../assets/aboutUs/team.webp";
 import testimonial1 from "../../../assets/aboutUs/testimonial1.png";
 import testimonial2 from "../../../assets/aboutUs/testimonial2.png";
 import testimonial3 from "../../../assets/aboutUs/testimonial3.png";
 import "./aboutustestimonials.css";
+import SlideShow from "../../homepage/components/carousel/SlideShow";
 
 export default function AboutUsTestimonials() {
   return (
@@ -26,10 +27,10 @@ export default function AboutUsTestimonials() {
         </div>
       </div>
       <div className="aboutus__testimonial--items">
-        <h3>
+        {/* <h3>
           Listen to what some of our satisfied clients have to say about us:
-        </h3>
-        <div className="aboutus__testimonial--img1">
+        </h3> */}
+        {/* <div className="aboutus__testimonial--img1">
           <img src={testimonial1} alt="testimonials" />
         </div>
         <div className="aboutus__testimonial--img2">
@@ -37,7 +38,8 @@ export default function AboutUsTestimonials() {
         </div>
         <div className="aboutus__testimonial--img3">
           <img src={testimonial3} alt="testimonials" />
-        </div>
+        </div> */}
+        <SlideShow />
       </div>
     </div>
   );

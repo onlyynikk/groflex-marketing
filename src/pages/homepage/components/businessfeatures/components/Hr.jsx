@@ -1,6 +1,6 @@
 import React from "react";
 import "./subfeatures.css";
-import hr from "../../../../../assets/homepage/new/hr.webp";
+import hr from "../../../../../assets/homepage/new/Hr.webp";
 import { Link } from "react-router-dom";
 import arrowright from "../../../../../assets/icons/rightarrow.svg";
 import arrowleft from "../../../../../assets/leftarrow.svg";

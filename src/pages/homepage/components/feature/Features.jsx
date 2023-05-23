@@ -91,9 +91,8 @@ export default function Features() {
             Quotations
           </h2>
           <p className="features__text">
-            See the inflow, outflow, sources and <br />
-            use of cash over a specific period
-            <br /> of time.
+            See the inflow, outflow, sources and use of cash over a specific
+            period of time.
           </p>
           <Link
             to="/features/invoice-and-quotation"

@@ -77,21 +77,24 @@ export default function MainFeatures() {
       <h1>Keep your business steady with grofleX</h1>
       <div className="mainfeatures__wrapper">
         <div className="wrapper__img--content">
-          {inventory ? (
+          <div className={inventory ? "visible-div" : "hidden-div"}>
             <Inventory />
-          ) : "" || crm ? (
+          </div>
+          <div className={crm ? "visible-div" : "hidden-div"}>
             <Crm />
-          ) : "" || billing ? (
-            <Billing setNumber={setNumber} number={number} />
-          ) : "" || hr ? (
-            <Hr setNumber={setNumber} />
-          ) : "" || commerce ? (
-            <Commerce setNumber={setNumber} number={number} />
-          ) : "" || supplyChain ? (
-            <Supply setNumber={setNumber} number={number} />
-          ) : (
-            ""
-          )}
+          </div>
+          <div className={billing ? "visible-div" : "hidden-div"}>
+            <Billing />
+          </div>
+          <div className={hr ? "visible-div" : "hidden-div"}>
+            <Hr />
+          </div>
+          <div className={commerce ? "visible-div" : "hidden-div"}>
+            <Commerce />
+          </div>
+          <div className={supplyChain ? "visible-div" : "hidden-div"}>
+            <Supply />
+          </div>
         </div>
         <div className="wrapper__list--content">
           <div className="countdown">

@@ -9,6 +9,7 @@ import "./components/feature/features.css";
 import GifContainer from "./components/gif-container/GifContainer";
 import MainFeatures from "./components/businessfeatures/MainFeatures";
 import UpcomingFeaturesBanner from "./upcomingfeaturesbanner/UpcomingFeaturesBanner";
+import SolutionSection from "./components/solutionsection/SolutionSection";
 
 export default function Homepage() {
   return (
@@ -18,8 +19,9 @@ export default function Homepage() {
       <TabSection />
       <SlideShow />
       <GifContainer />
-      <MainFeatures />
+      {/* <MainFeatures /> */}
       <DataSection />
+      <SolutionSection />
       <UpcomingFeaturesBanner />
       <Banner
         title={"FREE Forever Unlimited Quotations & Invoices"}
